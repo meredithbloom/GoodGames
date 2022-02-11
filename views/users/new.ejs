@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create an Account</title>
+  </head>
+  <body>
+    <header>
+      <h1>GOOD GAMES</h1>
+    <div class="new-account">
+      <h1 class='new-acct-h1'>create a new account</h1>
+
+      <form action='/users' method='POST'>
+        name: <input type='text' name='name' placeholder='name'></input><br/>
+        username: <input type='text' name='username' placeholder='username'/> <br/>
+        email: <input type='text' name='email' placeholder='your email address'/> <br/>
+        img: <input type='url' name='img' placeholder='prof pic'/> <br/>
+        type: <select id='type' name='type'>
+          <% for (let i=0; i< pokeTypes.length; i++) { %>
+            <option value=<%=pokeTypes[i]%>><%=pokeTypes[i]%></option>
+          <% } %>
+        </select>
+        type: <select id='type' name='type'>
+          <% for (let i=0; i< pokeTypes.length; i++) { %>
+            <option value=<%=pokeTypes[i]%>><%=pokeTypes[i]%></option>
+          <% } %>
+        </select>
+        <br/><br/>
+        stats: <br/>
+          hp: <input type='text' name='stats.hp' placeholder='hp'/> <br/>
+          attack: <input type='text' name='stats.attack' placeholder='attack'/> <br/>
+          defense: <input type='text' name='stats.defense' placeholder='defense'/> <br/>
+          spattack: <input type='text' name='stats.spattack' placeholder='special attack'/> <br/>
+          spdefense: <input type='text' name='stats.spdefense' placeholder='special defense'/> <br/>
+          speed: <input type='text' name='stats.speed' placeholder='speed'/> <br/>
+          <br/>
+        <input class='submit-new' type='submit' value='create pokemon'/>
+      </form>
+    </div>
+  </body>
+</html>

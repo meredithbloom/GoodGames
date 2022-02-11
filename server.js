@@ -13,17 +13,17 @@ require('dotenv').config()
 //MODELS
 const Game = require('./models/games.js');
 const gameSeed = require('./models/gameseed.js');
-const gameController = require('./controllers/games.js');
+// const gameController = require('./controllers/games.js');
 const gameModes = require('./models/gamemodes.js')
 const gameGenres = require('./models/genres.js')
 const platforms = require('./models/platforms.js')
-app.use('/games', gameController);
+// app.use('/games', gameController);
 
 
 const User = require('./models/users.js');
 const userSeed = require('./models/userlist.js');
-const userController = require('./controllers/users.js')
-app.use('/users', userController);
+// const userController = require('./controllers/users.js')
+// app.use('/users', userController);
 
 
 
@@ -70,42 +70,51 @@ app.get('/' , (req, res) => {
 
 
 //NEW USER
-
+app.get('/users/new', (req,res) => {
+  res.render(
+    'newuser.ejs',
+    {
+      genres: gameGenres,
+      gameModes: gameModes,
+      platforms: platforms
+    }
+  );
+});
 
 //CREATE USER - add to user database
-// app.post('/users', (req,res) => {
-//   User.create(req.body, (err, newUser) => {
-//     res.render(newUser)
-//     res.redirect('/users')
-//   });
-// });
+app.post('/users', (req,res) => {
+  User.create(req.body, (err, newUser) => {
+    res.redirect('/users')
+  });
+});
 
-//LOGIN / USER INDEX (SHOW USER - prompt user for input)
-// app.get('/users', (req,res) => {
-//   User.find({}, (err, allUsers) => {
-//     res.render(
-//       'login.ejs',
-//       {
-//         users: userSeed,
-//         tabTitle: 'Log-in'
-//       }
-//     );
-//   });
-// });
+// LOGIN / USER INDEX (SHOW USER - prompt user for input)
+app.get('/users', (req,res) => {
+  User.find({}, (err, allUsers) => {
+    res.send(allUsers)
+    res.render(
+      'userindex.ejs',
+      {
+        users: allUsers,
+        tabTitle: 'Log-in'
+      }
+    );
+  });
+});
 
 
-//SHOW USER
-// app.get('/users/:id', (req,res) => {
-//   User.findById(req.params.id, (err, chosenUser) => {
-//     res.send(chosenUser)
-//     res.render(
-//       '/users.show.ejs',
-//       {
-//         user: chosenUser
-//       }
-//     );
-//   });
-// });
+// SHOW USER
+app.get('/users/:id', (req,res) => {
+  User.findById(req.params.id, (err, chosenUser) => {
+    res.send(chosenUser)
+    res.render(
+      '/users.show.ejs',
+      {
+        user: chosenUser
+      }
+    );
+  });
+});
 
 
 //GAME SEED ROUTE

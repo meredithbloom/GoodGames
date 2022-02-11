@@ -6,13 +6,13 @@
   </head>
   <body>
     <header>
-      <h1> GOOD GAMES </h1>
+      <h1><a href='/'>GOOD GAMES</a> </h1>
     </header>
     <container class='profile-list'>
-      <% for (let i=0; i<users.length; i++) { %>
+      <% for (let i=0; i< users.length ; i++) { %>
         <div class="profile">
           <h3 class="username"><a href="/users/<%=users[i]._id%>">
-            <%=users.username[i]%>
+            <%=users[i].username%>
           </a></h3>
           <div class='profile-pic-box'>
             <a href="/users/<%=users[i]._id%>">

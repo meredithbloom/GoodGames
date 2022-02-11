@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Log-In</title>
+  </head>
+  <body>
+    <header>
+      <h1> GOOD GAMES </h1>
+    </header>
+    <container class='profile-list'>
+      <% for (let i=0; i<users.length; i++) { %>
+        <div class="profile">
+          <h3 class="username"><a href="/users/<%=users[i]._id%>">
+            <%=users.username[i]%>
+          </a></h3>
+          <div class='profile-pic-box'>
+            <a href="/users/<%=users[i]._id%>">
+              <img class='login-pic' src='<%=users[i].img%>'></img>
+            </a>
+          </div>
+        </div>
+      <% } %>
+    </container>
+  </body>
+</html>

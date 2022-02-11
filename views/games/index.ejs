@@ -10,11 +10,19 @@
       <h3><a href="#">Your Profile</a></h3>
     </header>
 
-    <container class="main-game-index">
-      <div class="game">
-        <h4>Game Title</h4>
-        <a href="#"><img class="game-cover" src="#">Game</img><a>
-      </div>
+    <container class='game-list'>
+      <% for (let i=0; i<games.length; i++) { %>
+        <div class="game">
+          <h3 class="title"><a href="/games/<%=games[i]._id%>">
+            <%=games.name[i]%>
+          </a></h3>
+          <div class='game-pic-box'>
+            <a href="/games/<%=games[i]._id%>">
+              <img class='game-cover' src='<%=games[i].img%>'></img>
+            </a>
+          </div>
+        </div>
+      <% } %>
     </container>
   </body>
 </html>

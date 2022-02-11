@@ -4,7 +4,7 @@
 const express = require('express');
 const methodOverride  = require('method-override');
 const mongoose = require ('mongoose');
-const app = express ();
+const app = express();
 const db = mongoose.connection;
 const session = require('express-session');
 require('dotenv').config()
@@ -17,11 +17,14 @@ const gameController = require('./controllers/games.js');
 const gameModes = require('./models/gamemodes.js')
 const gameGenres = require('./models/genres.js')
 const platforms = require('./models/platforms.js')
+app.use('/games', gameController);
 
 
 const User = require('./models/users.js');
 const userSeed = require('./models/userlist.js');
 const userController = require('./controllers/users.js')
+app.use('/users', userController);
+
 
 
 //___________________
@@ -37,15 +40,6 @@ const PORT = process.env.PORT || 3000;
 // How to connect to the database either via heroku or locally
 const MONGODB_URI = process.env.MONGODB_URI;
 
-// Connect to Mongo &
-// Fix Depreciation Warnings from Mongoose
-// May or may not need these depending on your Mongoose version
-mongoose.connect(MONGODB_URI);
-
-// Error / success
-db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
-db.on('connected', () => console.log('mongo connected: ', MONGODB_URI));
-db.on('disconnected', () => console.log('mongo disconnected'));
 
 //___________________
 //Middleware
@@ -61,30 +55,12 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
-//session objects
-// app.use(
-//   session({
-//     secret: process.env.SECRET,
-//     resave: false,
-//     saveUninitialized: false
-//   })
-// )
 
 //___________________
 // Routes
 //___________________
 //localhost:3000
 
-//session routes
-// app.get('/retrieve', (req,res) => {
-//   if (req.session.anyProperty === 'something i want it to') {
-//     //test to see if user value exists -
-//     console.log('it matches, cool!')
-//   } else {
-//     console.log('nope, not a match!')
-//   }
-//   res.redirect('/')
-// })
 
 
 //HOMEPAGE
@@ -94,52 +70,42 @@ app.get('/' , (req, res) => {
 
 
 //NEW USER
-app.get('/users/new', (req,res) => {
-  res.render(
-    'users/new.ejs',
-    {
-      tabTitle: 'Create a profile',
-      allUsers: userSeed,
-      genres: gameGenres,
-      platforms: platforms,
-      gameModes: gameModes,
-    }
-  )
-});
+
 
 //CREATE USER - add to user database
-app.post('/users', (req,res) => {
-  User.create(req.body, (err, newUser) => {
-    res.redirect('/users')
-  });
-});
+// app.post('/users', (req,res) => {
+//   User.create(req.body, (err, newUser) => {
+//     res.render(newUser)
+//     res.redirect('/users')
+//   });
+// });
 
 //LOGIN / USER INDEX (SHOW USER - prompt user for input)
-app.get('/users', (req,res) => {
-  User.find({}, (err, allUsers) => {
-    res.render(
-      'login.ejs',
-      {
-        users: userSeed,
-        tabTitle: 'Log-in'
-      }
-    );
-  });
-});
+// app.get('/users', (req,res) => {
+//   User.find({}, (err, allUsers) => {
+//     res.render(
+//       'login.ejs',
+//       {
+//         users: userSeed,
+//         tabTitle: 'Log-in'
+//       }
+//     );
+//   });
+// });
 
 
 //SHOW USER
-app.get('/users/:id', (req,res) => {
-  User.findById(req.params.id, (err, chosenUser) => {
-    res.send(chosenUser)
-    res.render(
-      '/users.show.ejs',
-      {
-        user: chosenUser
-      }
-    );
-  });
-});
+// app.get('/users/:id', (req,res) => {
+//   User.findById(req.params.id, (err, chosenUser) => {
+//     res.send(chosenUser)
+//     res.render(
+//       '/users.show.ejs',
+//       {
+//         user: chosenUser
+//       }
+//     );
+//   });
+// });
 
 
 //GAME SEED ROUTE
@@ -157,7 +123,15 @@ app.get('/games/index' , (req, res) => {
 //SHOW GAME
 
 
+// Connect to Mongo &
+// Fix Depreciation Warnings from Mongoose
+// May or may not need these depending on your Mongoose version
+mongoose.connect(MONGODB_URI);
 
+// Error / success
+db.on('error', (err) => console.log(err.message + ' is Mongod not running?'));
+db.on('connected', () => console.log('mongo connected: ', MONGODB_URI));
+db.on('disconnected', () => console.log('mongo disconnected'));
 
 //___________________
 //Listener

@@ -107,11 +107,25 @@ app.get('/users/new', (req,res) => {
   )
 });
 
+//CREATE USER - add to user database
+app.post('/users', (req,res) => {
+  User.create(req.body, (err, newUser) => {
+    res.redirect('/users')
+  });
+});
 
-//LOGIN (SHOW USER - prompt user for input)
-app.get('/users/login', (req,res) => {
-
-})
+//LOGIN / USER INDEX (SHOW USER - prompt user for input)
+app.get('/users', (req,res) => {
+  User.find({}, (err, allUsers) => {
+    res.render(
+      'login.ejs',
+      {
+        users: userSeed,
+        tabTitle: 'Log-in'
+      }
+    );
+  });
+});
 
 
 //SHOW USER

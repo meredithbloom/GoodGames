@@ -22,7 +22,7 @@ router.get('/new', (req,res) => {
 })
 
 
-//ADD GAME ROUTE (create)
+//CREATE GAME ROUTE (create)
 router.post('/', (req,res) => {
   Game.create(req.body, (err, addedGame) => {
     res.redirect('/games')
@@ -36,10 +36,7 @@ router.get('/', (req,res) =>{
     res.render(
       'games/index.ejs',
       {
-        games: allGames,
-        genres: genres,
-        platforms: platforms,
-        gameModes: gameModes
+        games: allGames
       }
     )
   })

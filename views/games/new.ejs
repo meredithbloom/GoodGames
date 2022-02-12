@@ -16,23 +16,30 @@
         img: <input type='url' name='img' placeholder='image url'/> <br/>
         year: <input type='text' name='year' placeholder='year released'/> <br/>
         publisher:<input type='text' name='publisher' placeholder='publisher'/>
+        <br/><br/>
         developer:<input type='text' name='developer' placeholder='developer'/>
-
-        platforms: <select id='type' name='type'>
-          <% for (let i=0; i< pokeTypes.length; i++) { %>
-            <option value=<%=pokeTypes[i]%>><%=pokeTypes[i]%></option>
+        <br/><br/>
+        platforms: <select id='platforms' name='platforms' multiple>
+          <% for (let i=0; i< platforms.length; i++) { %>
+            <option value=<%=platforms[i]%>><%=platforms[i]%></option>
           <% } %>
         </select>
         <br/><br/>
-        stats: <br/>
-          hp: <input type='text' name='stats.hp' placeholder='hp'/> <br/>
-          attack: <input type='text' name='stats.attack' placeholder='attack'/> <br/>
-          defense: <input type='text' name='stats.defense' placeholder='defense'/> <br/>
-          spattack: <input type='text' name='stats.spattack' placeholder='special attack'/> <br/>
-          spdefense: <input type='text' name='stats.spdefense' placeholder='special defense'/> <br/>
-          speed: <input type='text' name='stats.speed' placeholder='speed'/> <br/>
-          <br/>
-        <input class='submit-new' type='submit' value='create pokemon'/>
+        genres: <select id='genres' name='genres' multiple>
+          <% for (let i=0; i< genres.length; i++) { %>
+            <option value=<%=genres[i]%>><%=genres[i]%></option>
+          <% } %>
+        </select>
+        <br/><br/>
+        creative lead:<input type='text' name='creativeLead' placeholder='creative lead'/>
+        <br/>
+        game modes: <select id='game-modes' name='gameModes' multiple>
+          <% for (let i=0; i< gameModes.length; i++) { %>
+            <option value=<%=gameModes[i]%>><%=gameModes[i]%></option>
+          <% } %>
+        </select>
+        <br/><br/>
+        <input class='submit-new' type='submit' value='add game'/>
       </form>
     </div>
   </body>

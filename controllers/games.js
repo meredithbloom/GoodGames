@@ -1,16 +1,63 @@
 const express = require('express');
 const router = express.Router()
 
+const genres = require('../models/genres.js');
+const platforms = require('../models/platforms.js')
+const gameModes = require('../models/gamemodes.js')
+const Game = require('../models/games.js')
 
+router.use(express.urlencoded({extended:false}));
+
+
+//NEW GAME ROUTE
+router.get('/new', (req,res) => {
+  res.render(
+    'games/new.ejs',
+    {
+      genres: genres,
+      platforms: platforms,
+      gameModes: gameModes
+    }
+  )
+})
+
+
+//ADD GAME ROUTE (create)
+router.post('/', (req,res) => {
+  Game.create(req.body, (err, addedGame) => {
+    res.redirect('/games')
+  })
+})
 
 
 //GAMES INDEX
 router.get('/', (req,res) =>{
-  res.render('users/index.ejs')
+  Game.find({}, (err, allGames) => {
+    res.render(
+      'games/index.ejs',
+      {
+        games: allGames,
+        genres: genres,
+        platforms: platforms,
+        gameModes: gameModes
+      }
+    )
+  })
+})
+
+
+//GAME SHOW PAGE
+router.get('/:id', (req,res) => {
+  Game.findById(req.params.id, (err, foundGame) => {
+    res.render(
+      'games/show.ejs',
+      {
+        game: foundGame
+      }
+    )
+  })
 })
 
 
 
-
-
-module.exports = router 
+module.exports = router

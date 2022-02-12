@@ -10,24 +10,19 @@
     </header>
     <h3><a href="/games/new">Add a game</a></h3>
     <container class="all-games">
-          <% for (let i = 0; i<games.length; i++) { %>
-            <div class="games-index">
-              <button class="edit-btn"><a href="/users/<%=users[i]._id%>/edit" class="edit-link">EDIT</a></button>
-              <div class='game-index-img-box'>
-                <a href="/games/<%=games[i]._id%>">
-                  <img class='game-index-img' src='<%=games[i].img%>'></img>
-                </a>
-              </div>
-              <h2 class='game-index-name'><a href="/games/<%=games[i]._id%>" class="name-a">
-                <%=games[i].name%>
-              </a></h2>
-              <br/>
-
-              <form action='/games/<%=gamesi]._id%>?_method=DELETE' method='POST'>
-                <input type='submit' value='DELETE' class='delete'/>
-              </form>
-            </div>
-          <% } %>
-        </container>
+      <% for (let i = 0; i<games.length; i++) { %>
+        <div class="games-index">
+          <div class='game-index-img-box'>
+            <a href="/games/<%=games[i]._id%>">
+              <img class='game-index-img' src='<%=games[i].img%>'></img>
+            </a>
+          </div>
+          <h2 class='game-index-name'><a href="/games/<%=games[i]._id%>" class="name-a">
+            <%=games[i].name%>
+          </a></h2>
+          <br/>
+        </div>
+      <% } %>
+    </container>
   </body>
 </html>

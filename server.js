@@ -69,68 +69,68 @@ app.get('/' , (req, res) => {
 });
 
 
-//NEW USER
-app.get('/users/new', (req,res) => {
-  res.render(
-    'newuser.ejs',
-    {
-      genres: gameGenres,
-      gameModes: gameModes,
-      platforms: platforms
-    }
-  );
-});
-
-//CREATE USER - add to user database
-app.post('/users', (req,res) => {
-  res.render(req.body)
-  User.create(req.body, (err, newUser) => {
-    res.render(req.body)
-    // res.redirect('/users')
-  });
-});
-
-
-// LOGIN / USER INDEX (SHOW USER - prompt user for input)
-app.get('/users', (req,res) => {
-  User.find({}, (err, allUsers) => {
-    // res.send(allUsers)
-    res.render(
-      'userindex.ejs',
-      {
-        users: allUsers,
-        tabTitle: 'Log-in'
-      }
-    );
-  });
-});
-
-
-// SHOW USER
-app.get('/users/:id', (req,res) => {
-  User.findById(req.params.id, (err, chosenUser) => {
-    // res.send(chosenUser)
-    res.render(
-      'showuser.ejs',
-      {
-        user: chosenUser
-      }
-    );
-  });
-});
-
-
-//GAME SEED ROUTE
-
-
-
-
-//MASTER GAME INDEX
-app.get('/games/index' , (req, res) => {
-  res.render('games/index.ejs')
-});
-
-
+// //NEW USER
+// app.get('/users/new', (req,res) => {
+//   res.render(
+//     'newuser.ejs',
+//     {
+//       genres: gameGenres,
+//       gameModes: gameModes,
+//       platforms: platforms
+//     }
+//   );
+// });
+//
+// //CREATE USER - add to user database
+// app.post('/users', (req,res) => {
+//   res.render(req.body)
+//   User.create(req.body, (err, newUser) => {
+//     res.render(req.body)
+//     // res.redirect('/users')
+//   });
+// });
+//
+//
+// // LOGIN / USER INDEX (SHOW USER - prompt user for input)
+// app.get('/users', (req,res) => {
+//   User.find({}, (err, allUsers) => {
+//     // res.send(allUsers)
+//     res.render(
+//       'userindex.ejs',
+//       {
+//         users: allUsers,
+//         tabTitle: 'Log-in'
+//       }
+//     );
+//   });
+// });
+//
+//
+// // SHOW USER
+// app.get('/users/:id', (req,res) => {
+//   User.findById(req.params.id, (err, chosenUser) => {
+//     // res.send(chosenUser)
+//     res.render(
+//       'showuser.ejs',
+//       {
+//         user: chosenUser
+//       }
+//     );
+//   });
+// });
+//
+//
+// //GAME SEED ROUTE
+//
+//
+//
+//
+// //MASTER GAME INDEX
+// app.get('/games/index' , (req, res) => {
+//   res.render('games/index.ejs')
+// });
+//
+//
 
 //SHOW GAME
 

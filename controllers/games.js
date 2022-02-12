@@ -1,5 +1,9 @@
 const express = require('express');
 const router = express.Router()
+const methodOverride = require('method-override')
+
+
+
 
 const genres = require('../models/genres.js');
 const platforms = require('../models/platforms.js')
@@ -7,6 +11,7 @@ const gameModes = require('../models/gamemodes.js')
 const Game = require('../models/games.js')
 
 router.use(express.urlencoded({extended:false}));
+router.use(methodOverride('_method'));
 
 
 //NEW GAME ROUTE
@@ -52,6 +57,14 @@ router.get('/:id', (req,res) => {
         game: foundGame
       }
     )
+  })
+})
+
+
+//GAME DELETE
+router.delete('/:id', (req, res) => {
+  Game.findByIdAndDelete(req.params.id, (err, deletedGame) => {
+    res.redirect('/games')
   })
 })
 

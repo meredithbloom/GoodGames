@@ -39,6 +39,9 @@
         <% } %>
       </ul>
       <br/><br/>
+      <form action="/games/<%=game._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete Game"/>
+      </form>
     </div>
   </body>
 </html>

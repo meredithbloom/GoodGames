@@ -83,15 +83,18 @@ app.get('/users/new', (req,res) => {
 
 //CREATE USER - add to user database
 app.post('/users', (req,res) => {
+  res.render(req.body)
   User.create(req.body, (err, newUser) => {
-    res.redirect('/users')
+    res.render(req.body)
+    // res.redirect('/users')
   });
 });
+
 
 // LOGIN / USER INDEX (SHOW USER - prompt user for input)
 app.get('/users', (req,res) => {
   User.find({}, (err, allUsers) => {
-    res.send(allUsers)
+    // res.send(allUsers)
     res.render(
       'userindex.ejs',
       {
@@ -106,9 +109,9 @@ app.get('/users', (req,res) => {
 // SHOW USER
 app.get('/users/:id', (req,res) => {
   User.findById(req.params.id, (err, chosenUser) => {
-    res.send(chosenUser)
+    // res.send(chosenUser)
     res.render(
-      '/users.show.ejs',
+      'showuser.ejs',
       {
         user: chosenUser
       }

@@ -12,12 +12,12 @@ require('dotenv').config()
 
 //MODELS
 const Game = require('./models/games.js');
-const gameSeed = require('./models/gameseed.js');
-// const gameController = require('./controllers/games.js');
+// const gameSeed = require('./models/gameseed.js');
+const gameController = require('./controllers/games.js');
 const gameModes = require('./models/gamemodes.js')
 const gameGenres = require('./models/genres.js')
 const platforms = require('./models/platforms.js')
-// app.use('/games', gameController);
+app.use('/games', gameController);
 
 
 const User = require('./models/users.js');
@@ -49,7 +49,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 app.use(express.static('public'));
 
 // populates req.body with parsed info from forms - if no data from forms will return an empty object {}
-app.use(express.urlencoded({ extended: false }));// extended: false - does not allow nested objects in query strings
+app.use(express.urlencoded({ extended: true }));// extended: false - does not allow nested objects in query strings
 app.use(express.json());// returns middleware that only parses JSON - may or may not need it depending on your project
 
 //use method override
@@ -65,7 +65,7 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 //HOMEPAGE
 app.get('/' , (req, res) => {
-  res.render('home.ejs');
+  res.render('index.ejs');
 });
 
 

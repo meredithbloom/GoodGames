@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add a game</title>
+  </head>
+  <body>
+    <header>
+      <h1>GOOD GAMES</h1>
+    </header>
+    <div class="new-game">
+      <h1 class='create-h1'>add a new game</h1>
+
+      <form action='/games' method='POST'>
+        name: <input type='text' name='name' placeholder='name'/> <br/>
+        img: <input type='url' name='img' placeholder='image url'/> <br/>
+        year: <input type='text' name='year' placeholder='year released'/> <br/>
+        publisher:<input type='text' name='publisher' placeholder='publisher'/>
+        developer:<input type='text' name='developer' placeholder='developer'/>
+
+        platforms: <select id='type' name='type'>
+          <% for (let i=0; i< pokeTypes.length; i++) { %>
+            <option value=<%=pokeTypes[i]%>><%=pokeTypes[i]%></option>
+          <% } %>
+        </select>
+        <br/><br/>
+        stats: <br/>
+          hp: <input type='text' name='stats.hp' placeholder='hp'/> <br/>
+          attack: <input type='text' name='stats.attack' placeholder='attack'/> <br/>
+          defense: <input type='text' name='stats.defense' placeholder='defense'/> <br/>
+          spattack: <input type='text' name='stats.spattack' placeholder='special attack'/> <br/>
+          spdefense: <input type='text' name='stats.spdefense' placeholder='special defense'/> <br/>
+          speed: <input type='text' name='stats.speed' placeholder='speed'/> <br/>
+          <br/>
+        <input class='submit-new' type='submit' value='create pokemon'/>
+      </form>
+    </div>
+  </body>
+</html>

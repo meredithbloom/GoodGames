@@ -3,8 +3,6 @@ const router = express.Router()
 const methodOverride = require('method-override')
 
 
-
-
 const genres = require('../models/genres.js');
 const platforms = require('../models/platforms.js')
 const gameModes = require('../models/gamemodes.js')
@@ -57,6 +55,30 @@ router.get('/:id', (req,res) => {
         game: foundGame
       }
     )
+  })
+})
+
+
+//EDIT GAME ROUTE
+router.get('/:id/edit', (req,res) => {
+  Game.findById(req.params.id, (err, foundGame) => {
+    res.render(
+      'games/edit.ejs',
+      {
+        game: foundGame,
+        genres: genres,
+        platforms: platforms,
+        gameModes: gameModes
+      }
+    )
+  })
+})
+
+
+//UPDATE GAME ROUTE
+router.put('/:id', (req, res) => {
+  Game.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundGame) => {
+    res.redirect('/games')
   })
 })
 

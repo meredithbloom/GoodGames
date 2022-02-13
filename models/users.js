@@ -13,7 +13,7 @@ const userSchema = mongoose.Schema({
   // currentlyPlaying: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
   // played: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
   // willPlay: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}]
-}, {versionKey: false});
+});
 
 const User = mongoose.model('User', userSchema);
 

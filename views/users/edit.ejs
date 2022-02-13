@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/header.ejs') %>
+    </header>
+
+    <h3 class="prof-page">Welcome back, <%=user.username%>.</h3>
+
+    <container class="profile-details">
+      <div class="prof-pic-box">
+        <img class="prof-pic" src='<%=user.img%>'></img>
+      </div>
+
+      <div class="personal-details">
+        <h3 class="username"><%=user.username%></h3>
+        <h3 class="prof-name">Name: <%=user.name%></h3>
+        <h5 class="email">Email: <%=user.email%> </h5>
+      </div>
+
+      <div class="user-preferences">
+        <h4 class='show-h4'>Platforms</h4>
+        <ul class="platforms">
+          <% for (let i = 0; i < user.platforms.length; i++) { %>
+            <li class="owned-platform"><span class="owned-platform <%=user.platforms[i]%>"><%=user.platforms[i]%></span></li>
+          <% } %>
+        </ul>
+
+        <h4 class='show-h4'>Genres</h4>
+        <ul class="genres">
+          <% for (let i = 0; i < user.genres.length; i++) { %>
+            <li class="user-genre"><span class="game-genre <%=user.genres[i]%>"><%=user.genres[i]%></span></li>
+          <% } %>
+        </ul>
+
+        <h4 class='show-h4'>Game Modes</h4>
+        <ul class="game-modes">
+          <% for (let i = 0; i < user.gameModes.length; i++) { %>
+            <li class="user-gmode"><span class="user-gmode <%=user.gameModes[i]%>"><%=user.gameModes[i]%></span></li>
+          <% } %>
+        </ul>
+      </div>
+      
+      <div class="edit-profile">
+        <form action='/users/<%=user._id%>?_method=PUT' method='POST'>
+          name: <input type='text' name='name' value='<%=user.name%>'/> <br/>
+          img: <input type='url' name='img' value='<%=user.img%>'/> <br/>
+          email: <input type='text' name='email' value='<%=user.email%>'/> <br/>
+          platforms: <select id='platforms' name='platforms' value='<%=user.platforms%>' multiple>
+            <% for (let i=0; i< platforms.length; i++) { %>
+              <option value=<%=platforms[i]%>><%=platforms[i]%></option>
+            <% } %>
+          </select>
+          <br/><br/>
+          genres: <select id='genres' name='genres' value='<%=user.genres%>' multiple>
+            <% for (let i=0; i< genres.length; i++) { %>
+              <option value=<%=genres[i]%>><%=genres[i]%></option>
+            <% } %>
+          </select>
+          <br/><br/>
+          game modes: <select id='game-modes' name='gameModes' value='<%=user.gameModes%>' multiple>
+            <% for (let i=0; i< gameModes.length; i++) { %>
+              <option value=<%=gameModes[i]%>><%=gameModes[i]%></option>
+            <% } %>
+          </select>
+          <br/><br/>
+          <input class='edit-profile' type='submit' value='Edit Profile'/>
+        </form>
+      </div>
+
+  </body>
+
+</html>

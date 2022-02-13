@@ -61,11 +61,25 @@ router.get('/:id', (req,res) => {
       {
         tabTitle: foundUser.username,
         user: foundUser
-
       }
     )
   })
 })
 
+//EDIT PROFILE PAGE
+router.get('/:id/edit', (req,res) => {
+  User.findById(req.params.id, (error, foundUser) => {
+    res.render(
+      'users/edit.ejs',
+      {
+        tabTitle: 'Edit Profile',
+        user: foundUser,
+        genres: genres,
+        platforms: platforms,
+        gameModes: gameModes
+      }
+    )
+  })
+})
 
 module.exports = router

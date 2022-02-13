@@ -10,9 +10,9 @@ const userSchema = mongoose.Schema({
   genres: [String],
   platforms: [String],
   gameModes: [String],
-  currentlyPlaying: [Game.schema],
-  played: [Game.schema],
-  willPlay: [Game.schema]
+  currentlyPlaying: [String],
+  played: [String],
+  willPlay: [String]
 })
 
 const User = mongoose.model('User', userSchema);

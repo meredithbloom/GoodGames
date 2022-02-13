@@ -12,17 +12,17 @@ require('dotenv').config()
 
 //MODELS
 const Game = require('./models/games.js');
-// const gameSeed = require('./models/gameseed.js');
 const gameController = require('./controllers/games.js');
 const gameModes = require('./models/gamemodes.js')
 const gameGenres = require('./models/genres.js')
 const platforms = require('./models/platforms.js')
-app.use('/games', gameController);
+
 
 
 const User = require('./models/users.js');
 const userController = require('./controllers/users.js')
 app.use('/users', userController);
+app.use('/games', gameController);
 
 
 

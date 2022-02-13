@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const User = require('./users.js')
 
 const gameSchema = mongoose.Schema ({
-  name: {type: String, required: true, unique: true},
+  name: {type: String, required: true},
   img: {type: String, required: true},
   year: {type: Number},
   publisher: {type: String},

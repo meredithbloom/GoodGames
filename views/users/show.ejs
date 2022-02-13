@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/header.ejs') %>
+    </header>
+
+    <h3 class="prof-page">Welcome back, <%=user.username%>.</h3>
+
+    <container class="profile-details">
+      <div class="prof-pic-box">
+        <img class="prof-pic" src='<%=user.img%>'></img>
+      </div>
+
+      <div class="personal-details">
+        <h3 class="username"><%=user.username%></h3>
+        <h3 class="prof-name">Name: <%=user.name%></h3>
+        <h5 class="email">Email: <%=user.email%> </h5>
+      </div>
+
+      <div class="user-preferences">
+        <h4 class='show-h4'>Platforms</h4>
+        <ul class="platforms">
+          <% for (let i = 0; i < user.platforms.length; i++) { %>
+            <li class="owned-platform"><span class="owned-platform <%=user.platforms[i]%>"><%=user.platforms[i]%></span></li>
+          <% } %>
+        </ul>
+
+        <h4 class='show-h4'>Genres</h4>
+        <ul class="genres">
+          <% for (let i = 0; i < user.genres.length; i++) { %>
+            <li class="user-genre"><span class="game-genre <%=user.genres[i]%>"><%=user.genres[i]%></span></li>
+          <% } %>
+        </ul>
+
+        <h4 class='show-h4'>Game Modes</h4>
+        <ul class="game-modes">
+          <% for (let i = 0; i < user.gameModes.length; i++) { %>
+            <li class="user-gmode"><span class="user-gmode <%=user.gameModes[i]%>"><%=user.gameModes[i]%></span></li>
+          <% } %>
+        </ul>
+      </div>
+
+      <div class="user-game-lists">
+        <h4 class='show-h4'>Currently Playing</h4>
+        <ul class="current-games">
+          <% for (let i = 0; i < user.currentlyPlaying.length; i++) { %>
+            <li class="current-game">
+              <%=user.currentlyPlaying[i].name%>
+              <img class="current-game-cover" src="<%=user.currentlyPlaying[i].img%>"></img>
+            </li>
+          <% } %>
+        </ul>
+
+        <h4 class='show-h4'>Played</h4>
+        <ul class="past-games">
+          <% for (let i = 0; i < user.played.length; i++) { %>
+            <li class="played-game">
+              <%=user.played[i].name%>
+              <img class="past-game-cover" src="<%=user.played[i].img%>"></img>
+            </li>
+          <% } %>
+        </ul>
+
+        <h4 class='show-h4'>To Play</h4>
+        <ul class="future-games">
+          <% for (let i = 0; i < user.willPlay.length; i++) { %>
+            <li class="future-game">
+              <%=user.willPlay[i].name%>
+              <img class="future-game-cover" src="<%=user.willPlay[i].img%>"></img>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+
+      <section>
+        <a href="/users/<%=user._id%>/edit">Edit Profile</a>
+      </section>
+      <br/>
+      <form action="/users/<%=user._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete Account"/>
+  </body>
+
+</html>

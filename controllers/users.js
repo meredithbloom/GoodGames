@@ -6,10 +6,12 @@ const methodOverride = require('method-override')
 const genres = require('../models/genres.js');
 const platforms = require('../models/platforms.js')
 const gameModes = require('../models/gamemodes.js')
-const Game = require('../models/games.js')
 const User = require('../models/users.js')
+// const Game = require('../models/games.js')
+// const gameController = require('./controllers/games.js');
 
-router.use(express.urlencoded({extended:false}));
+
+router.use(express.urlencoded({extended:true}));
 router.use(methodOverride('_method'));
 
 
@@ -30,7 +32,8 @@ router.get('/new', (req,res)=> {
 
 
 //CREATE USER ROUTE
-router.post('/', (req,res) => {
+router.post('/users', (req,res) => {
+  res.send('data received...')
   User.create(req.body, (err, newUser) => {
     res.redirect('/users')
   })
@@ -50,7 +53,19 @@ router.get('/', (req,res) => {
   })
 })
 
+//USER SHOW PAGE
+router.get('/:id', (req,res) => {
+  User.findById(req.params.id, (err, foundUser) => {
+    res.render(
+      'users/show.ejs',
+      {
+        tabTitle: foundUser.username,
+        user: foundUser
 
+      }
+    )
+  })
+})
 
 
 module.exports = router

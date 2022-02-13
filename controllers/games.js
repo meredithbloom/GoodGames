@@ -8,7 +8,7 @@ const platforms = require('../models/platforms.js')
 const gameModes = require('../models/gamemodes.js')
 const Game = require('../models/games.js')
 
-router.use(express.urlencoded({extended:false}));
+router.use(express.urlencoded({extended:true}));
 router.use(methodOverride('_method'));
 
 
@@ -68,7 +68,7 @@ router.get('/:id/edit', (req,res) => {
     res.render(
       'games/edit.ejs',
       {
-        tabTitle: 'Edit ' + foundGame.name, 
+        tabTitle: 'Edit ' + foundGame.name,
         game: foundGame,
         genres: genres,
         platforms: platforms,

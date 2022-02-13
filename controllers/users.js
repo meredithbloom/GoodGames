@@ -82,4 +82,21 @@ router.get('/:id/edit', (req,res) => {
   })
 })
 
+
+//UPDATE PROFILE
+router.put('/:id', (req,res) => {
+  User.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundUser) => {
+    res.redirect('/users')
+  })
+})
+
+
+//USER DELETE
+router.delete('/:id', (req,res) => {
+  User.findByIdAndDelete(req.params.id, (err, deletedGame) => {
+    res.redirect('/users')
+  })
+})
+
+
 module.exports = router

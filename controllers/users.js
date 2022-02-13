@@ -14,6 +14,29 @@ router.use(methodOverride('_method'));
 
 
 
+
+//NEW USER PAGE
+router.get('/new', (req,res)=> {
+  res.render(
+    'users/new.ejs',
+    {
+      tabTitle: 'Create an Account',
+      genres: genres,
+      platforms: platforms,
+      gameModes: gameModes
+    }
+  );
+})
+
+
+//CREATE USER ROUTE
+router.post('/', (req,res) => {
+  User.create(req.body, (err, newUser) => {
+    res.redirect('/users')
+  })
+})
+
+
 // USER INDEX PAGE - PICK YOUR PROFILE //
 router.get('/', (req,res) => {
   User.find({}, (err, allUsers) => {
@@ -26,7 +49,6 @@ router.get('/', (req,res) => {
     )
   })
 })
-
 
 
 

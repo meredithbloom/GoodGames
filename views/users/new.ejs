@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/header.ejs') %>
+    </header>
+    <div class="new-user">
+      <h1 class='create-account'>create a profile</h1>
+
+      <form action='/users' method='POST'>
+        name: <input type='text' name='name' placeholder='your name'/> <br/>
+        username: <input type='text' name='username' placeholder='username'/> <br/>
+        email: <input type='text' name='email' placeholder='email'/> <br/>
+        img:<input id="text" type="img" name='img' placeholder='profile picture'/>
+        <br/><br/>
+        favorite genres: <select id='genres' name='genres' multiple>
+          <% for (let i=0; i< genres.length; i++) { %>
+            <option value=<%=genres[i]%>><%=genres[i]%></option>
+          <% } %>
+        </select>
+        <br/><br/>
+        platforms: <select id='platforms' name='platforms' multiple>
+          <% for (let i=0; i< platforms.length; i++) { %>
+            <option value=<%=platforms[i]%>><%=platforms[i]%></option>
+          <% } %>
+        </select>
+        <br/><br/>
+        game modes: <select id='game-modes' name='gameModes' multiple>
+          <% for (let i=0; i< gameModes.length; i++) { %>
+            <option value=<%=gameModes[i]%>><%=gameModes[i]%></option>
+          <% } %>
+        </select>
+        <br/><br/>
+        <input class='submit-new' type='submit' value='create profile'/>
+      </form>
+    </div>
+  </body>
+</html>

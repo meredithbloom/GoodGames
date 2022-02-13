@@ -22,8 +22,8 @@ app.use('/games', gameController);
 
 const User = require('./models/users.js');
 const userSeed = require('./models/userlist.js');
-// const userController = require('./controllers/users.js')
-// app.use('/users', userController);
+const userController = require('./controllers/users.js')
+app.use('/users', userController);
 
 
 

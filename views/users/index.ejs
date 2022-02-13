@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/header.ejs') %>
+    </header>
+    <h1>Choose your account</h1>
+
+    <div class="profile-container">
+      <% for (let i=0; i< users.length; i++) { %>
+        <div class="profile">
+          <div class="prof-pic-box">
+            <a href="/users/<%=users[i]._id%>">
+              <img class='user-index-img' src='<%=users[i].img%>'></img>
+            </a>
+          </div>
+          <h3 class='index-username'><a href="/users/<%=users[i]._id%>" class="name-a">
+            <%=users[i].username%>
+          </a></h3>
+      <% } %>
+    </div>
+  </body>
+</html>

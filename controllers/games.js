@@ -17,6 +17,7 @@ router.get('/new', (req,res) => {
   res.render(
     'games/new.ejs',
     {
+      tabTitle: 'Add a Game',
       genres: genres,
       platforms: platforms,
       gameModes: gameModes
@@ -39,6 +40,7 @@ router.get('/', (req,res) =>{
     res.render(
       'games/index.ejs',
       {
+        tabTitle: 'All Games',
         games: allGames
       }
     )
@@ -52,6 +54,7 @@ router.get('/:id', (req,res) => {
     res.render(
       'games/show.ejs',
       {
+        tabTitle: foundGame.name,
         game: foundGame
       }
     )
@@ -65,6 +68,7 @@ router.get('/:id/edit', (req,res) => {
     res.render(
       'games/edit.ejs',
       {
+        tabTitle: 'Edit ' + foundGame.name, 
         game: foundGame,
         genres: genres,
         platforms: platforms,

@@ -4,8 +4,8 @@ const Game = require('./games.js');
 
 const userSchema = mongoose.Schema({
   name: {type: String, required: true},
-  username: {type: String, required:true, unique: true},
-  email: {type: String, required: true, unique: true},
+  username: {type: String, required:true},
+  email: {type: String, required: true},
   img: String,
   genres: [String],
   platforms: [String],

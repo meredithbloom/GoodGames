@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Game = require('./games.js');
+
 
 
 const userSchema = mongoose.Schema({
@@ -9,11 +9,11 @@ const userSchema = mongoose.Schema({
   img: String,
   genres: [String],
   platforms: [String],
-  gameModes: [String],
-  currentlyPlaying: [String],
-  played: [String],
-  willPlay: [String]
-})
+  gameModes: [String]
+  // currentlyPlaying: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
+  // played: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
+  // willPlay: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}]
+}, {versionKey: false});
 
 const User = mongoose.model('User', userSchema);
 

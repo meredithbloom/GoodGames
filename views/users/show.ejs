@@ -44,37 +44,7 @@
         </ul>
       </div>
 
-      <div class="user-game-lists">
-        <h4 class='show-h4'>Currently Playing</h4>
-        <ul class="current-games">
-          <% for (let i = 0; i < user.currentlyPlaying.length; i++) { %>
-            <li class="current-game">
-              <%=user.currentlyPlaying[i].name%>
-              <img class="current-game-cover" src="<%=user.currentlyPlaying[i].img%>"></img>
-            </li>
-          <% } %>
-        </ul>
-
-        <h4 class='show-h4'>Played</h4>
-        <ul class="past-games">
-          <% for (let i = 0; i < user.played.length; i++) { %>
-            <li class="played-game">
-              <%=user.played[i].name%>
-              <img class="past-game-cover" src="<%=user.played[i].img%>"></img>
-            </li>
-          <% } %>
-        </ul>
-
-        <h4 class='show-h4'>To Play</h4>
-        <ul class="future-games">
-          <% for (let i = 0; i < user.willPlay.length; i++) { %>
-            <li class="future-game">
-              <%=user.willPlay[i].name%>
-              <img class="future-game-cover" src="<%=user.willPlay[i].img%>"></img>
-            </li>
-          <% } %>
-        </ul>
-      </div>
+    
 
       <section>
         <a href="/users/<%=user._id%>/edit">Edit Profile</a>

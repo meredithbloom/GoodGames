@@ -32,8 +32,8 @@ router.get('/new', (req,res)=> {
 
 
 //CREATE USER ROUTE
-router.post('/users', (req,res) => {
-  res.send('data received...')
+router.post('/', (req,res) => {
+  // res.send('data received...')
   User.create(req.body, (err, newUser) => {
     res.redirect('/users')
   })

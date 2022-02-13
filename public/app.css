@@ -1,0 +1,77 @@
+/* COLOR CODES */
+/* Celadon Blue - #0081af */
+/* Palatinate Purple - #693668 */
+/* Alabaster - #e0e2db */
+/* Ao English - #157f1f */
+/* Red Crayola - #ea1744 */
+/* Cyclamen - #f26ca7 */
+/* Dark Spring Green - #157145 */
+/* Bright Lilac - #cb9cf2 */
+
+
+
+/* PARTIALS */
+header {
+  background:  #cb9cf2;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  list-style: none;
+}
+
+
+/* HOMEPAGE */
+
+
+
+
+
+
+
+
+
+
+
+/* GAME INDEX PAGE */
+.all-games {
+  border: 1px solid #157145;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+.games-index {
+  border: 2px solid #ea1744;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+/* GAME SHOW PAGE */
+.show-game {
+  width: 75%;
+  margin: 0 auto;
+  border: 1px solid #0081af;
+  text-align: center;
+}
+
+.platforms, .genres, .game-modes {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* GAME EDIT PAGE */
+.edit-game {
+  margin: 0 auto;
+  width: 60%;
+  border: 1px solid #ea1744;
+  text-align: center;
+}

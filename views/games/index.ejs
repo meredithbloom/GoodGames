@@ -7,7 +7,6 @@
     <header>
       <%- include('../partials/header.ejs') %>
     </header>
-    <h3><a href="/games/new">Add a game</a></h3>
     <container class="all-games">
       <% for (let i = 0; i<games.length; i++) { %>
         <div class="games-index">
@@ -20,8 +19,8 @@
             <%=games[i].name%>
           </a></h2>
           <br/>
-          <form action="/games/<%=games[i]._id%>?_method=DELETE" method='POST'>
-            <input type='submit' value='Delete Game' class='delete'/>
+          <form class="delete-btn" action="/games/<%=games[i]._id%>?_method=DELETE" method='POST'>
+            <input type='submit' value='DELETE' class='delete'/>
           </form>
         </div>
       <% } %>

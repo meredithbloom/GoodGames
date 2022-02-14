@@ -7,52 +7,148 @@
 /* Cyclamen - #f26ca7 */
 /* Dark Spring Green - #157145 */
 /* Bright Lilac - #cb9cf2 */
+/* Dark Slate Gray - #294d4a */
+/* Feldgrau - #445552 */
+/* Glossy Grape - #A799B7 */
+/* Glossy Grape - #9888A5 */
 
 
+/* FONTS */
+@font-face {
+  font-family: 'Games';
+  src: url('./fonts/Games-XvD2.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Acquire';
+  src: url('./fonts/AquireBold-8Ma60.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Asleepytiming';
+  src: url('./fonts/Asleepytiming-1GaEZ.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Momcake';
+  src: url('./fonts/MomcakeBold-WyonA.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'GepesteV';
+    src: url('./fonts/Gepestev-nRJgO.ttf') format('ttf');
+}
 
 /* PARTIALS */
+body {
+  background-color: #294d4a;
+  margin: 0 auto;
+}
+
+.GG {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-family: 'Games';
+  margin: 0 auto;
+  font-size: 5em;
+}
+
 header {
-  background:  #cb9cf2;
+  background:  #294d4a;
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 2em;
 
 }
 
-a {
+a.header {
   text-decoration: none;
+  color: white;
 }
 
 .nav-bar {
   list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  display: inline-block;
+  margin: 0 15px 0 15px;
+  font-family: 'Asleepytiming';
+  font-size: 2em;
+}
+
+.nav:hover {
+  transform: scale(1.2);
 }
 
 
 /* HOMEPAGE */
 
-
-
-
-
-
-
-
-
-
-
-/* GAME INDEX PAGE */
-.all-games {
-  border: 1px solid #157145;
-  width: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0 auto;
-}
-
-.games-index {
-  border: 2px solid #ea1744;
+.homepage {
+  width: 50%;
   margin: 0 auto;
   text-align: center;
 }
 
+.home-h1 {
+  margin-top: 35%;
+  font-family: 'Games';
+  font-size: 6em;
+}
 
+.home-h3 {
+  font-family: 'Momcake';
+  font-size: 3em;
+}
+
+#games {
+  width: 250px;
+  height: 250px;
+}
+
+
+/* GAME INDEX PAGE */
+.all-games {
+  /* border: 1px solid #157145; */
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.games-index {
+  /* border: 2px solid #ea1744; */
+  margin: 0 auto;
+  padding: .5em;
+  margin-top: 1em;
+  background: #A799B7;
+}
+
+.game-index-name {
+  font-family: 'Asleepytiming';
+  text-align: center;
+}
+
+.name-a {
+  text-decoration: none;
+  color: #445552;
+}
+
+.delete-btn {
+
+}
+
+.delete {
+  border: none;
+  font-family: 'GepesteV';
+}
 
 /* GAME SHOW PAGE */
 .show-game {
@@ -66,7 +162,6 @@ a {
   list-style: none;
   padding: 0;
 }
-
 
 /* GAME EDIT PAGE */
 .edit-game {

@@ -1,3 +1,3 @@
-const platforms = ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac iOS', 'Mobile', 'VR']
+const platforms = ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR']
 
 module.exports = platforms

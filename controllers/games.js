@@ -42,18 +42,6 @@ games.get('/new', (req,res) => {
   )
 })
 
-//GAME SEED ROUTE
-
-// Game.create(gameSeed, (err, mockGames) => {
-//   if(err) {
-//     console.log(err)
-//   } else {
-//     console.log('added provided mock game data')
-//   }
-// })
-
-
-
 
 //CREATE GAME ROUTE (create)
 games.post('/', (req,res) => {
@@ -61,6 +49,21 @@ games.post('/', (req,res) => {
     res.redirect('/games')
   })
 })
+
+
+//GAME SEED ROUTE
+games.get('/seed', (req,res) => {
+  Game.create(gameSeed, (err, resetGames) => {
+    res.redirect('/games')
+  })
+})
+// Game.create(gameSeed, (err, mockGames) => {
+//   if(err) {
+//     console.log(err)
+//   } else {
+//     console.log('added provided mock game data')
+//   }
+// })
 
 
 //GAMES INDEX

@@ -11,6 +11,7 @@
 /* Feldgrau - #445552 */
 /* Glossy Grape - #A799B7 */
 /* Glossy Grape - #9888A5 */
+/* Forest Green Crayola - #6d9f71 */
 
 
 /* FONTS */
@@ -39,6 +40,43 @@
     src: url('./fonts/Gepestev-nRJgO.ttf') format('ttf');
 }
 
+/* PLATFORM ICONS */
+
+.Xbox {
+  content: url('https://www.freepnglogos.com/uploads/xbox-one-logo-vector-24.png');
+  max-width: 75px;
+}
+
+.Playstation {
+  content: url('https://www.freepnglogos.com/uploads/playstation-png-logo/playstation-png-logo-0.png');
+  max-width: 75px;
+}
+
+.Playstation:hover {
+  color: blue;
+}
+
+.Nintendo {
+
+}
+
+.PC {
+
+}
+
+.Mac {
+
+
+}
+
+.Mobile {
+
+}
+
+.VR {
+
+}
+
 /* PARTIALS */
 body {
   background-color: #294d4a;
@@ -52,6 +90,10 @@ body {
   font-family: 'Games';
   margin: 0 auto;
   font-size: 5em;
+}
+
+#GG:hover {
+  color: #e0e2db;
 }
 
 header {
@@ -84,7 +126,8 @@ a.header {
 }
 
 .nav:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
+  color: #e0e2db;
 }
 
 
@@ -100,11 +143,13 @@ a.header {
   margin-top: 35%;
   font-family: 'Games';
   font-size: 6em;
+  color: #e0e2db;
 }
 
 .home-h3 {
   font-family: 'Momcake';
   font-size: 3em;
+  color: #e0e2db;
 }
 
 #games {
@@ -124,7 +169,6 @@ a.header {
 }
 
 .games-index {
-  /* border: 2px solid #ea1744; */
   margin: 0 auto;
   padding: .5em;
   margin-top: 1em;
@@ -132,8 +176,13 @@ a.header {
 }
 
 .game-index-name {
-  font-family: 'Asleepytiming';
+  font-family: 'Momcake';
   text-align: center;
+  font-size: 1.9em;
+}
+
+.game-index-img {
+  max-width: 220px;
 }
 
 .name-a {
@@ -141,26 +190,95 @@ a.header {
   color: #445552;
 }
 
-.delete-btn {
-
-}
-
 .delete {
   border: none;
   font-family: 'GepesteV';
+  background: #A799B7;
+  color: #445552;
+}
+
+.delete:hover {
+  transform: scale(1.2);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* GAME SHOW PAGE */
 .show-game {
   width: 75%;
   margin: 0 auto;
-  border: 1px solid #0081af;
   text-align: center;
+  background: rgba(167, 153,183, .5);
+  color: white;
+  padding: 2em;
+  margin-top: 7%;
+}
+
+.show-game-h1 {
+  font-family: 'Momcake';
+  font-size: 3.7em;
+  text-align: left;
+  margin-top: .5em;
+}
+
+.show-game-sans-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Asleepytiming';
+  flex-wrap: wrap;
+}
+
+.show-game-img {
+  max-width: 300px;
+}
+
+.game-year, .game-publisher, .game-dev {
+  font-family: 'Momcake';
+}
+
+.show-h4 {
+  font-size: 2em;
+  font-family: 'Momcake';
+  margin-top: .7em;
+  margin-bottom: .7em;
+}
+
+.game-details-box {
+  align-self: center;
+  width: 10%;
+  min-width: 10%;
+  padding: 1em;
+}
+
+.game-genre {
+  font-size: 1.2em;
+}
+
+.platform-box, .game-details-box, .genres-box, .game-modes-box, .routes {
+  background: rgba(167, 153,183, .4);
+  padding: 10px;
+}
+
+.routes {
+  align-self: flex-end;
 }
 
 .platforms, .genres, .game-modes {
   list-style: none;
   padding: 0;
+}
+
+.edit-btn {
+  font-size: 1.5em;
+}
+
+.edit-a {
+  text-decoration: none;
+  color: white;
+}
+
+form {
+  border: none;
 }
 
 /* GAME EDIT PAGE */

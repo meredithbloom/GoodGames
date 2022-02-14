@@ -3,11 +3,13 @@
 //___________________
 const express = require('express');
 const methodOverride  = require('method-override');
-const mongoose = require ('mongoose');
+const mongoose = require('mongoose');
 const app = express();
 const db = mongoose.connection;
 const session = require('express-session');
 require('dotenv').config()
+const bcrypt = require('bcrypt')
+const axios = require('axios')
 
 
 //MODELS
@@ -17,12 +19,14 @@ const gameModes = require('./models/gamemodes.js')
 const gameGenres = require('./models/genres.js')
 const platforms = require('./models/platforms.js')
 
+const sessionsController = require('./controllers/sessions_controller.js')
 
 
 const User = require('./models/users.js');
 const userController = require('./controllers/users.js')
 app.use('/users', userController);
 app.use('/games', gameController);
+app.use('/sessions', sessionsController)
 
 
 
@@ -39,10 +43,18 @@ const PORT = process.env.PORT || 3000;
 // How to connect to the database either via heroku or locally
 const MONGODB_URI = process.env.MONGODB_URI;
 
-
 //___________________
 //Middleware
 //___________________
+
+app.use(
+  session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: false
+  })
+)
+
 
 //use public folder for static assets
 app.use(express.static('public'));
@@ -59,6 +71,39 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 //localhost:3000
+
+//env variables
+const client_id = process.env.client_id
+const client_secret = process.env.client_secret
+const grant_type = process.env.client_credentials
+const access_token = process.env.access_token
+const token_type = process.env.token_type
+// const options = {
+//   headers: {
+//     'Client-Id': client_id,
+//     'Authorization': 'Bearer' access_token
+//   }
+// }
+
+axios({
+  method: 'POST',
+  url: 'https://api.igdb.com/v4/games',
+  headers: {
+    'Client-ID': 'x7kxz02uzg5wye8odruj7q87sbkrpi',
+    'Authorization': 'Bearer 8wko9jqct7fnx3ixscjz66qea8838l'
+  },
+  params: {
+    fields: 'name,platforms',
+    _limit:25,
+  }
+})
+  .then(response => {
+    console.log(response.data);
+})
+  .catch(err => {
+    console.log(err);
+});
+
 
 
 

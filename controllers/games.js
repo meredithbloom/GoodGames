@@ -1,23 +1,38 @@
 const express = require('express');
-const router = express.Router()
+const games = express.Router()
+require('dotenv').config()
 const methodOverride = require('method-override')
+const sessionsController = require('./sessions_controller.js')
 
+const User = require('../models/users.js');
+const userController = require('./users.js')
 
 const genres = require('../models/genres.js');
 const platforms = require('../models/platforms.js')
 const gameModes = require('../models/gamemodes.js')
 const Game = require('../models/games.js')
+const bcrypt = require('bcrypt')
+const axios = require('axios')
 
-router.use(express.urlencoded({extended:true}));
-router.use(methodOverride('_method'));
+
+games.use('/users', userController);
+games.use('/sessions', sessionsController)
+games.use(express.urlencoded({extended:true}));
+games.use(methodOverride('_method'));
+
+const client_id = process.env.client_id
+const client_secret = process.env.client_secret
+const grant_type = process.env.client_credentials
+
 
 
 //NEW GAME ROUTE
-router.get('/new', (req,res) => {
+games.get('/new', (req,res) => {
   res.render(
     'games/new.ejs',
     {
       tabTitle: 'Add a Game',
+      currentUser: req.session.currentUser,
       genres: genres,
       platforms: platforms,
       gameModes: gameModes
@@ -27,7 +42,7 @@ router.get('/new', (req,res) => {
 
 
 //CREATE GAME ROUTE (create)
-router.post('/', (req,res) => {
+games.post('/', (req,res) => {
   Game.create(req.body, (err, addedGame) => {
     res.redirect('/games')
   })
@@ -35,7 +50,7 @@ router.post('/', (req,res) => {
 
 
 //GAMES INDEX
-router.get('/', (req,res) =>{
+games.get('/', (req,res) =>{
   Game.find({}, (err, allGames) => {
     res.render(
       'games/index.ejs',
@@ -49,7 +64,7 @@ router.get('/', (req,res) =>{
 
 
 //GAME SHOW PAGE
-router.get('/:id', (req,res) => {
+games.get('/:id', (req,res) => {
   Game.findById(req.params.id, (err, foundGame) => {
     res.render(
       'games/show.ejs',
@@ -63,7 +78,7 @@ router.get('/:id', (req,res) => {
 
 
 //EDIT GAME ROUTE
-router.get('/:id/edit', (req,res) => {
+games.get('/:id/edit', (req,res) => {
   Game.findById(req.params.id, (err, foundGame) => {
     res.render(
       'games/edit.ejs',
@@ -80,7 +95,7 @@ router.get('/:id/edit', (req,res) => {
 
 
 //UPDATE GAME ROUTE
-router.put('/:id', (req, res) => {
+games.put('/:id', (req, res) => {
   Game.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundGame) => {
     res.redirect('/games')
   })
@@ -88,7 +103,7 @@ router.put('/:id', (req, res) => {
 
 
 //GAME DELETE
-router.delete('/:id', (req, res) => {
+games.delete('/:id', (req, res) => {
   Game.findByIdAndDelete(req.params.id, (err, deletedGame) => {
     res.redirect('/games')
   })
@@ -96,4 +111,4 @@ router.delete('/:id', (req, res) => {
 
 
 
-module.exports = router
+module.exports = games

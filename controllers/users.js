@@ -1,24 +1,28 @@
+const bcrypt = require('bcrypt')
 const express = require('express');
-const router = express.Router()
+const users = express.Router()
 const methodOverride = require('method-override')
+require('dotenv').config()
+
 
 
 const genres = require('../models/genres.js');
 const platforms = require('../models/platforms.js')
 const gameModes = require('../models/gamemodes.js')
+const sessionsController = require('./sessions_controller.js')
 const User = require('../models/users.js')
-// const Game = require('../models/games.js')
-// const gameController = require('./controllers/games.js');
+const Game = require('../models/games.js')
+const gameController = require('./games.js');
 
-
-router.use(express.urlencoded({extended:true}));
-router.use(methodOverride('_method'));
+users.use('/sessions', sessionsController)
+users.use(express.urlencoded({extended:true}));
+users.use(methodOverride('_method'));
 
 
 
 
 //NEW USER PAGE
-router.get('/new', (req,res)=> {
+users.get('/new', (req,res)=> {
   res.render(
     'users/new.ejs',
     {
@@ -32,8 +36,9 @@ router.get('/new', (req,res)=> {
 
 
 //CREATE USER ROUTE
-router.post('/', (req,res) => {
+users.post('/', (req,res) => {
   // res.send('data received...')
+  req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10));
   User.create(req.body, (err, newUser) => {
     res.redirect('/users')
   })
@@ -41,7 +46,7 @@ router.post('/', (req,res) => {
 
 
 // USER INDEX PAGE - PICK YOUR PROFILE //
-router.get('/', (req,res) => {
+users.get('/', (req,res) => {
   User.find({}, (err, allUsers) => {
     res.render(
       'users/index.ejs',
@@ -53,8 +58,8 @@ router.get('/', (req,res) => {
   })
 })
 
-//USER SHOW PAGE
-router.get('/:id', (req,res) => {
+// USER SHOW PAGE
+users.get('/:id', (req,res) => {
   User.findById(req.params.id, (err, foundUser) => {
     res.render(
       'users/show.ejs',
@@ -67,7 +72,7 @@ router.get('/:id', (req,res) => {
 })
 
 //EDIT PROFILE PAGE
-router.get('/:id/edit', (req,res) => {
+users.get('/:id/edit', (req,res) => {
   User.findById(req.params.id, (error, foundUser) => {
     res.render(
       'users/edit.ejs',
@@ -84,7 +89,7 @@ router.get('/:id/edit', (req,res) => {
 
 
 //UPDATE PROFILE
-router.put('/:id', (req,res) => {
+users.put('/:id', (req,res) => {
   User.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundUser) => {
     res.redirect('/users')
   })
@@ -92,11 +97,11 @@ router.put('/:id', (req,res) => {
 
 
 //USER DELETE
-router.delete('/:id', (req,res) => {
+users.delete('/:id', (req,res) => {
   User.findByIdAndDelete(req.params.id, (err, deletedGame) => {
     res.redirect('/users')
   })
 })
 
 
-module.exports = router
+module.exports = users

@@ -49,13 +49,13 @@ const MONGODB_URI = process.env.MONGODB_URI;
 //Middleware
 //___________________
 
-app.use(
-  session({
-    secret: process.env.SECRET,
-    resave: false,
-    saveUninitialized: false
-  })
-)
+// app.use(
+//   session({
+//     secret: process.env.SECRET,
+//     resave: false,
+//     saveUninitialized: false
+//   })
+// )
 
 
 //use public folder for static assets
@@ -75,11 +75,11 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //localhost:3000
 
 //env variables
-const client_id = process.env.client_id
-const client_secret = process.env.client_secret
-const grant_type = process.env.client_credentials
-const access_token = process.env.access_token
-const token_type = process.env.token_type
+// const client_id = process.env.client_id
+// const client_secret = process.env.client_secret
+// const grant_type = process.env.client_credentials
+// const access_token = process.env.access_token
+// const token_type = process.env.token_type
 // const options = {
 //   headers: {
 //     'Client-Id': client_id,

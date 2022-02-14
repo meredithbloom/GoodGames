@@ -13,7 +13,7 @@ const gameModes = require('../models/gamemodes.js')
 const Game = require('../models/games.js')
 const bcrypt = require('bcrypt')
 const axios = require('axios')
-
+const gameSeed = require('../models/mockgames.js')
 
 games.use('/users', userController);
 games.use('/sessions', sessionsController)
@@ -26,19 +26,33 @@ const grant_type = process.env.client_credentials
 
 
 
+
+
+
 //NEW GAME ROUTE
 games.get('/new', (req,res) => {
   res.render(
     'games/new.ejs',
     {
       tabTitle: 'Add a Game',
-      currentUser: req.session.currentUser,
       genres: genres,
       platforms: platforms,
       gameModes: gameModes
     }
   )
 })
+
+//GAME SEED ROUTE
+
+// Game.create(gameSeed, (err, mockGames) => {
+//   if(err) {
+//     console.log(err)
+//   } else {
+//     console.log('added provided mock game data')
+//   }
+// })
+
+
 
 
 //CREATE GAME ROUTE (create)

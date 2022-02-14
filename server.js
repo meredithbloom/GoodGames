@@ -18,8 +18,10 @@ const gameController = require('./controllers/games.js');
 const gameModes = require('./models/gamemodes.js')
 const gameGenres = require('./models/genres.js')
 const platforms = require('./models/platforms.js')
+const gameSeed = require('./models/mockgames.js')
 
 const sessionsController = require('./controllers/sessions_controller.js')
+
 
 
 const User = require('./models/users.js');
@@ -85,26 +87,26 @@ const token_type = process.env.token_type
 //   }
 // }
 
-axios({
-  method: 'POST',
-  url: 'https://api.igdb.com/v4/games',
-  headers: {
-    'Client-ID': 'x7kxz02uzg5wye8odruj7q87sbkrpi',
-    'Authorization': 'Bearer 8wko9jqct7fnx3ixscjz66qea8838l'
-  },
-  params: {
-    fields: 'name,platforms',
-    _limit:25,
-  }
-})
-  .then(response => {
-    console.log(response.data);
-})
-  .catch(err => {
-    console.log(err);
-});
-
-
+// axios({
+//   method: 'POST',
+//   url: 'https://api.igdb.com/v4/games',
+//   headers: {
+//     'Client-ID': 'x7kxz02uzg5wye8odruj7q87sbkrpi',
+//     'Authorization': 'Bearer 8wko9jqct7fnx3ixscjz66qea8838l'
+//   },
+//   params: {
+//     fields: 'name,platforms',
+//     _limit:25,
+//   }
+// })
+//   .then(response => {
+//     console.log(response.data);
+// })
+//   .catch(err => {
+//     console.log(err);
+// });
+//
+//
 
 
 //HOMEPAGE

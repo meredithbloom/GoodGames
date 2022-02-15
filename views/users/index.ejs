@@ -7,24 +7,22 @@
     <header>
       <%- include('../partials/header.ejs') %>
     </header>
-
-    <h3><a href="/users/new">Create an Account</a></h3>
-
-    <br/>
-    <h1>Choose your account</h1>
-    <container class="profile-container">
-      <% for (let i=0; i< users.length; i++) { %>
-        <div class="profile">
-          <div class="prof-pic-box">
-            <a href="/users/<%=users[i]._id%>">
-              <img class='user-index-img' src='<%=users[i].img%>'></img>
-            </a>
+    <div class='profile-box'>
+      <h1 class='choose-account'>Choose your account</h1>
+      <container class="profile-container">
+        <% for (let i=0; i< users.length; i++) { %>
+          <div class="profile">
+            <div class="prof-pic-box">
+              <a href="/users/<%=users[i]._id%>">
+                <img class='user-index-img' src='<%=users[i].img%>'></img>
+              </a>
+            </div>
+            <h3 class='index-username'><a href="/users/<%=users[i]._id%>" class="name-a">
+              <%=users[i].username%>
+            </a></h3>
           </div>
-          <h3 class='index-username'><a href="/users/<%=users[i]._id%>" class="name-a">
-            <%=users[i].username%>
-          </a></h3>
-        </div>
-      <% } %>
-    </container>
+        <% } %>
+      </container>
+    </div>
   </body>
 </html>

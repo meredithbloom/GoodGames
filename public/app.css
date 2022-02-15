@@ -200,6 +200,7 @@ a.header {
   transform: scale(1.2);
   font-weight: bold;
   cursor: pointer;
+  color: #ea1744;
 }
 
 /* GAME SHOW PAGE */
@@ -291,14 +292,22 @@ form {
 }
 
 
-/* NEW GAME PAGE */
-.create-h1 {
+/*------- NEW/EDIT/LOG-IN PAGE -------*/
+
+.create-h1, .create-account, .choose-account, .prof-page {
   text-align: center;
   font-family: 'Momcake';
   font-size: 3em;
-
+  color: #294d4a;
 }
-.new-game {
+
+.profile-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.new-game, .new-user, .profile-box, .profile-details {
   margin: 0 auto;
   background: rgba(167,153,183,.8);
   width: 50%;
@@ -306,22 +315,27 @@ form {
   padding: 1em;
 }
 
-.new-game-form {
+.user-index-img, .prof-pic {
+  border-radius: 50%;
+}
+
+.new-game-form, .new-user-form {
   font-family: 'Momcake';
   font-size: 1.5em;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   font-weight: bold;
+  color: #294d4a;
 }
 
-
-.submit-new {
+.submit-new, .index-username {
   font-family: 'Momcake';
   font-size: 1.5em;
   border: none;
   background: rgba(167,153,183,0);
   padding: 10px;
+  color: #294d4a;
 }
 
 .submit-new:hover {

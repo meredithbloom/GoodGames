@@ -19,6 +19,7 @@ sessions.get('/new', (req,res) => {
     'sessions/new-session.ejs',
     {
       currentUser: req.session.username,
+      tabTitle: 'Log-In'
     }
   )
 })

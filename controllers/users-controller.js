@@ -39,7 +39,8 @@ users.get('/new', (req,res)=> {
       tabTitle: 'Create an Account',
       genres: genres,
       platforms: platforms,
-      gameModes: gameModes
+      gameModes: gameModes,
+      currentUser: false
     }
   );
 })
@@ -75,6 +76,7 @@ users.get('/:id', (req,res) => {
     res.render(
       'users/show.ejs',
       {
+        currentUser: true,
         tabTitle: `${foundUser.username}'s Profile`,
         user: foundUser
       }
@@ -92,7 +94,8 @@ users.get('/:id/edit', (req,res) => {
         user: foundUser,
         genres: genres,
         platforms: platforms,
-        gameModes: gameModes
+        gameModes: gameModes,
+        currentUser: true
       }
     )
   })

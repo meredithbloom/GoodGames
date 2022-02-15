@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Log in</title>
+    <%- include('../partials/head.ejs') %>
   </head>
   <body>
     <header>
       <%- include('../partials/header.ejs') %>
     </header>
 
-    <h1> welcome </h1>
+
 
     <div class='log-in-box'>
+      <h1 class="login"> Login below </h1>
       <form action='/sessions' method="POST">
         <input type="text" name="username" placeholder="username" value=""/>
         <input type="password" name="password" placeholder="password" value=""/>

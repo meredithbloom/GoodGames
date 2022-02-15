@@ -130,6 +130,14 @@ a.header {
 
 
 /* ----------HOMEPAGE----------- */
+.homepage-header {
+  text-align: right;
+  font-family: 'Games';
+  font-size: 2em;
+  position: relative;
+  margin-right: 1em;
+  color: #e0e2db;
+}
 
 .homepage {
   width: 50%;
@@ -138,23 +146,33 @@ a.header {
 }
 
 .home-h1 {
-  margin-top: 35%;
+  margin-top: 20%;
   font-family: 'Games';
   font-size: 6em;
   color: #e0e2db;
 }
 
-.home-h3 {
+.home-h3, .homepage-signup {
   font-family: 'Momcake';
   font-size: 3em;
+  color: #e0e2db;
+}
+
+.homepage-signup {
+  margin-top: .5em;
+}
+
+.homepage-a {
+  text-decoration: none;
   color: #e0e2db;
 }
 
 #games {
   width: 250px;
   height: 250px;
-  background-color: #e0e2db;
 }
+
+
 
 
 /* -------GAME INDEX PAGE ---------*/
@@ -302,6 +320,11 @@ form {
   font-size: 3em;
   color: #294d4a;
 }
+.login {
+  font-family: 'Momcake';
+  text-align: center;
+  margin: 0 auto;
+}
 
 .profile-container {
   display: flex;
@@ -309,7 +332,7 @@ form {
   justify-content: space-around;
 }
 
-.new-game, .new-user, .profile-box, .profile-details, .edit-game {
+.new-game, .new-user, .profile-box, .profile-details, .edit-game, .log-in-box {
   margin: 0 auto;
   background: rgba(167,153,183,.8);
   width: 50%;
@@ -319,7 +342,6 @@ form {
 
 .edit-game-show-box {
   display: flex;
-
 }
 
 .user-index-img, .prof-pic {

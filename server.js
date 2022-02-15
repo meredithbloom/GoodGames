@@ -118,7 +118,11 @@ app.use('/sessions', sessionsController)
 
 //HOMEPAGE
 app.get('/' , (req, res) => {
-  res.render('index.ejs');
+  res.render(
+    'index.ejs',
+  {
+    currentUser: req.session.currentUser
+  });
 });
 
 

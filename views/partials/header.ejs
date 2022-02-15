@@ -1,9 +1,21 @@
+
+
+
+
 <h1 class="GG"><a id="GG" class="header" href="/">GG</a></h1>
 <nav class="header">
-  <ul class="nav-bar">
+<ul class="nav-bar">
+  <% if (currentUser) { %>
     <li class="nav"><a class="header" href="/games">All Games</a></li>
     <li class="nav"><a class="header" href="/games/new">Add a Game</a></li>
+  <% } else { %>
     <li class="nav"><a class="header" href="/users/new">Sign Up</a></li>
     <li class="nav"><a class="header" href="/sessions/new">Log In</a></li>
+  <% } %>
+
+    <!-- <li class="nav"><a class="header" href="/games">All Games</a></li>
+    <li class="nav"><a class="header" href="/games/new">Add a Game</a></li>
+    <li class="nav"><a class="header" href="/users/new">Sign Up</a></li>
+    <li class="nav"><a class="header" href="/sessions/new">Log In</a></li> -->
   </ul>
 </nav>

@@ -10,10 +10,12 @@
     <div class="new-game">
       <h1 class='create-h1'>add a new game</h1>
 
-      <form action='/games' method='POST'>
-        name: <input type='text' name='name' placeholder='name'/> <br/>
-        img: <input type='url' name='img' placeholder='image url'/> <br/>
-        year: <input type='text' name='year' placeholder='year released'/> <br/>
+      <form class="new-game-form" action='/games' method='POST'>
+        name: <input type='text' name='name' placeholder='name'/>
+        <br/><br/>
+        img: <input type='url' name='img' placeholder='image url'/>
+        <br/><br/>
+        year: <input type='text' name='year' placeholder='year released'/> <br/><br/>
         publisher:<input type='text' name='publisher' placeholder='publisher'/>
         <br/><br/>
         developer:<input type='text' name='developer' placeholder='developer'/>
@@ -29,8 +31,6 @@
             <option value=<%=genres[i]%>><%=genres[i]%></option>
           <% } %>
         </select>
-        <br/><br/>
-        creative lead:<input type='text' name='creativeLead' placeholder='creative lead'/>
         <br/><br/>
         game modes: <select id='game-modes' name='gameModes' multiple>
           <% for (let i=0; i< gameModes.length; i++) { %>

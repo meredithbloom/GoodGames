@@ -21,7 +21,7 @@
           <h4 class='show-h4'>platforms</h4>
           <ul class="platforms">
             <% for (let i = 0; i < game.platforms.length; i++) { %>
-              <li class="game-platform"><img src='<%=game.platforms[i].logo%>' alt='<%=game.platforms[i].platformName%>'/></li>
+              <li class="game-platform"><div class='<%=game.platforms[i]%>'><%=game.platforms[i]%></div></li>
             <% } %>
           </ul>
         </div>
@@ -30,7 +30,7 @@
           <h4 class='show-h4'>genres</h4>
           <ul class="genres">
             <% for (let i = 0; i < game.genres.length; i++) { %>
-              <li class="game-genre"><%=game.genres[i]%></li>
+              <li class="game-genre"><span class="game-genre <%=game.genres[i]%>"><%=game.genres[i]%></span></li>
             <% } %>
           </ul>
         </div>
@@ -39,7 +39,7 @@
           <h4 class='show-h4'>game Modes</h4>
           <ul class="game-modes">
             <% for (let i = 0; i < game.gameModes.length; i++) { %>
-              <li class="game-mode <%=game.gameModes[i]%>"><%=game.gameModes[i]%></li>
+              <li class="game-mode"><span class="game-mode  <%=game.gameModes[i]%>"><%=game.gameModes[i]%></span></li>
             <% } %>
           </ul>
         </div>

@@ -153,7 +153,7 @@ a.header {
 #games {
   width: 250px;
   height: 250px;
-  /* background-image: url('views/video-console.png') */
+  background-color: #e0e2db;
 }
 
 
@@ -309,7 +309,7 @@ form {
   justify-content: space-around;
 }
 
-.new-game, .new-user, .profile-box, .profile-detailsm, .edit-game {
+.new-game, .new-user, .profile-box, .profile-details, .edit-game {
   margin: 0 auto;
   background: rgba(167,153,183,.8);
   width: 50%;

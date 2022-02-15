@@ -9,10 +9,20 @@ require('dotenv').config()
 const genres = require('../models/genres.js');
 const platforms = require('../models/platforms.js')
 const gameModes = require('../models/gamemodes.js')
-const sessionsController = require('./sessions_controller.js')
+const sessionsController = require('./sessions-controller.js')
 const User = require('../models/users.js')
 const Game = require('../models/games.js')
-const gameController = require('./games.js');
+const gameController = require('./games-controller.js');
+
+
+// const isAuthenticated = (req,res) => {
+//   if(req.session.currentUser) {
+//     return next()
+//   } else {
+//     res.redirect('/sessions/new')
+//   }
+// }
+
 
 users.use('/sessions', sessionsController)
 users.use(express.urlencoded({extended:true}));
@@ -60,14 +70,15 @@ users.get('/', (req,res) => {
 
 // USER SHOW PAGE
 users.get('/:id', (req,res) => {
-  User.findById(req.params.id, (err, foundUser) => {
-    res.render(
-      'users/show.ejs',
-      {
-        tabTitle: foundUser.username,
-        user: foundUser
-      }
-    )
+  User.findById(req.params._id, (err, foundUser) => {
+    console.log(foundUser);
+    // res.render(
+    //   'users/show.ejs',
+    //   {
+    //     tabTitle: foundUser,
+    //     user: foundUser
+    //   }
+    // )
   })
 })
 

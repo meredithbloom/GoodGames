@@ -1,3 +1,3 @@
-const gameModes = ['Single player', 'Cooperative Multi-player', 'Competitive Multi-player', 'MMO']
+const gameModes = ['Single player', 'Multiplayer']
 
 module.exports = gameModes

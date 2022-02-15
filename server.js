@@ -14,22 +14,27 @@ const axios = require('axios')
 
 //MODELS
 const Game = require('./models/games.js');
-const gameController = require('./controllers/games.js');
+const gameController = require('./controllers/games-controller.js');
 const gameModes = require('./models/gamemodes.js')
 const gameGenres = require('./models/genres.js')
 const platforms = require('./models/platforms.js')
 const gameSeed = require('./models/mockgames.js')
 
-const sessionsController = require('./controllers/sessions_controller.js')
-
+const sessionsController = require('./controllers/sessions-controller.js')
 
 
 const User = require('./models/users.js');
-const userController = require('./controllers/users.js')
-app.use('/users', userController);
-app.use('/games', gameController);
-app.use('/sessions', sessionsController)
+const userController = require('./controllers/users-controller.js')
 
+
+
+const isAuthenticated = (req,res) => {
+  if(req.session.currentUser) {
+    return next()
+  } else {
+    res.redirect('/sessions/new')
+  }
+}
 
 
 //___________________
@@ -49,15 +54,17 @@ const MONGODB_URI = process.env.MONGODB_URI;
 //Middleware
 //___________________
 
-// app.use(
-//   session({
-//     secret: process.env.SECRET,
-//     resave: false,
-//     saveUninitialized: false
-//   })
-// )
+app.use(
+  session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: false
+  })
+)
 
-
+app.use('/users', userController);
+app.use('/games', gameController);
+app.use('/sessions', sessionsController)
 //use public folder for static assets
 app.use(express.static('public'));
 
@@ -113,6 +120,8 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 app.get('/' , (req, res) => {
   res.render('index.ejs');
 });
+
+
 
 
 

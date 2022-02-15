@@ -6,7 +6,9 @@ const mongoose = require('mongoose');
 require('dotenv').config()
 
 const User = require('../models/users.js')
+const userController = require('./users-controller.js')
 
+sessions.use('/users', userController);
 sessions.use(express.urlencoded({extended:true}));
 sessions.use(methodOverride('_method'));
 
@@ -14,16 +16,14 @@ sessions.use(methodOverride('_method'));
 //New session
 sessions.get('/new', (req,res) => {
   res.render(
-    'sessions/new.ejs',
+    'sessions/new-session.ejs',
     {
-      currentUser: req.session.currentUser
+      currentUser: req.body.username,
     }
   )
 })
 
-
-
-//on Log-in
+//LOG-IN PATH
 sessions.post('/', (req,res) => {
   //step one: look for the username
   User.findOne({username: req.body.username}, (err, foundUser) => {
@@ -40,7 +40,7 @@ sessions.post('/', (req,res) => {
         //add the user to our session
         req.session.currentUser = foundUser
         //redirect to home page
-        res.redirect('/')
+        res.redirect('/users/:id')
       } else {
         //passwords don't match
         res.send('<a href="/"> password does not match </a>')

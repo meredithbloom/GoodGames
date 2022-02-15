@@ -50,13 +50,14 @@ const PORT = process.env.PORT || 3000;
 // How to connect to the database either via heroku or locally
 const MONGODB_URI = process.env.MONGODB_URI;
 
+const SECRET = process.env.SECRET
 //___________________
 //Middleware
 //___________________
 
 app.use(
   session({
-    secret: process.env.SECRET,
+    secret: SECRET,
     resave: false,
     saveUninitialized: false
   })

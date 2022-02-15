@@ -81,6 +81,14 @@ app.use('/sessions', sessionsController)
 //___________________
 //localhost:3000
 
+//HOMEPAGE
+app.get('/' , (req, res) => {
+  res.render('index.ejs');
+});
+
+
+
+
 //env variables
 // const client_id = process.env.client_id
 // const client_secret = process.env.client_secret
@@ -116,10 +124,7 @@ app.use('/sessions', sessionsController)
 //
 
 
-//HOMEPAGE
-app.get('/' , (req, res) => {
-  res.render('index.ejs');
-});
+
 
 
 

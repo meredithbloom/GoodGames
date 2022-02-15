@@ -8,7 +8,7 @@ require('dotenv').config()
 const User = require('../models/users.js')
 const userController = require('./users-controller.js')
 
-sessions.use('/users', userController);
+// sessions.use('/users', userController);
 sessions.use(express.urlencoded({extended:true}));
 sessions.use(methodOverride('_method'));
 
@@ -18,7 +18,7 @@ sessions.get('/new', (req,res) => {
   res.render(
     'sessions/new-session.ejs',
     {
-      currentUser: req.body.username,
+      currentUser: req.session.username,
     }
   )
 })
@@ -33,17 +33,17 @@ sessions.post('/', (req,res) => {
       res.send('oops, the db had a problem')
     } else if (!foundUser) {
       //if foundUser doesn't exist
-      res.send('<a href="/">Sorry, no user found </a>')
+      res.send('<a href="/">Sorry, no user found. Click to return to homepage.</a>')
     } else {
       //if user is found, we now need to check if their password matches
       if (bcrypt.compareSync(req.body.password, foundUser.password)) {
         //add the user to our session
         req.session.currentUser = foundUser
         //redirect to home page
-        res.redirect('/users/:id')
+        res.redirect('/users/' + req.session.currentUser._id)
       } else {
         //passwords don't match
-        res.send('<a href="/"> password does not match </a>')
+        res.send('<a href="/sessions/new"> password does not match. Click to return to log-in page. </a>')
       }
     }
   })

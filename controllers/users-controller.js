@@ -50,35 +50,35 @@ users.post('/', (req,res) => {
   // res.send('data received...')
   req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10));
   User.create(req.body, (err, newUser) => {
-    res.redirect('/users')
+    res.redirect('/users/' + newUser._id)
   })
 })
 
 
 // USER INDEX PAGE - PICK YOUR PROFILE //
-users.get('/', (req,res) => {
-  User.find({}, (err, allUsers) => {
-    res.render(
-      'users/index.ejs',
-      {
-        tabTitle: 'Pick your profile',
-        users: allUsers
-      }
-    )
-  })
-})
+// users.get('/', (req,res) => {
+//   User.find({}, (err, allUsers) => {
+//     res.render(
+//       'users/index.ejs',
+//       {
+//         tabTitle: 'Pick your profile',
+//         users: allUsers
+//       }
+//     )
+//   })
+// })
 
 // USER SHOW PAGE
 users.get('/:id', (req,res) => {
-  User.findById(req.params._id, (err, foundUser) => {
+  User.findById(req.params.id, (err, foundUser) => {
     console.log(foundUser);
-    // res.render(
-    //   'users/show.ejs',
-    //   {
-    //     tabTitle: foundUser,
-    //     user: foundUser
-    //   }
-    // )
+    res.render(
+      'users/show.ejs',
+      {
+        tabTitle: `${foundUser.username}'s Profile`,
+        user: foundUser
+      }
+    )
   })
 })
 

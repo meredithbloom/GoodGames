@@ -62,9 +62,7 @@ app.use(
   })
 )
 
-app.use('/users', userController);
-app.use('/games', gameController);
-app.use('/sessions', sessionsController)
+
 //use public folder for static assets
 app.use(express.static('public'));
 
@@ -74,7 +72,9 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
-
+app.use('/users', userController);
+app.use('/games', gameController);
+app.use('/sessions', sessionsController)
 
 //___________________
 // Routes

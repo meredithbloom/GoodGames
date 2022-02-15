@@ -2,22 +2,27 @@ const express = require('express');
 const games = express.Router()
 require('dotenv').config()
 const methodOverride = require('method-override')
-const sessionsController = require('./sessions-controller.js')
+const bcrypt = require('bcrypt')
+const axios = require('axios')
+
 
 const User = require('../models/users.js');
-const userController = require('./users-controller.js')
+const Game = require('../models/games.js');
 
+const gameSeed = require('../models/mockgames.js')
 const genres = require('../models/genres.js');
 const platforms = require('../models/platforms.js')
 const gameModes = require('../models/gamemodes.js')
-const Game = require('../models/games.js')
-const bcrypt = require('bcrypt')
-const axios = require('axios')
-const gameSeed = require('../models/mockgames.js')
 
-const client_id = process.env.client_id
-const client_secret = process.env.client_secret
-const grant_type = process.env.client_credentials
+const userController = require('./users-controller.js')
+const sessionsController = require('./sessions-controller.js')
+
+// const client_id = process.env.client_id
+// const client_secret = process.env.client_secret
+// const grant_type = process.env.client_credentials
+
+
+
 
 const isAuthenticated = (req,res) => {
   if(req.session.currentUser) {
@@ -26,8 +31,6 @@ const isAuthenticated = (req,res) => {
     res.redirect('/sessions/new')
   }
 }
-
-
 
 games.use('/users', userController);
 games.use('/sessions', sessionsController)

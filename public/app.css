@@ -324,6 +324,7 @@ form {
 
 .user-index-img, .prof-pic {
   border-radius: 50%;
+  max-width: 170px;
 }
 
 .new-game-form, .new-user-form, .edit-game {

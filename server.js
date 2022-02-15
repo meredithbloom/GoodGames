@@ -28,13 +28,13 @@ const userController = require('./controllers/users-controller.js')
 
 
 
-const isAuthenticated = (req,res) => {
-  if(req.session.currentUser) {
-    return next()
-  } else {
-    res.redirect('/sessions/new')
-  }
-}
+// const isAuthenticated = (req,res) => {
+//   if(req.session.currentUser) {
+//     return next()
+//   } else {
+//     res.redirect('/sessions/new')
+//   }
+// }
 
 
 //___________________
@@ -118,15 +118,8 @@ app.use('/sessions', sessionsController)
 
 //HOMEPAGE
 app.get('/' , (req, res) => {
-  res.render(
-    'index.ejs',
-  {
-    currentUser: req.session.currentUser
-  });
+  res.render('index.ejs');
 });
-
-
-
 
 
 

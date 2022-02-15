@@ -72,7 +72,7 @@ users.post('/', (req,res) => {
 // USER SHOW PAGE
 users.get('/:id', (req,res) => {
   User.findById(req.params.id, (err, foundUser) => {
-    console.log(foundUser);
+    // console.log(foundUser);
     res.render(
       'users/show.ejs',
       {

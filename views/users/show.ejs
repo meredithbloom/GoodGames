@@ -44,13 +44,13 @@
             <% } %>
           </ul>
         </div>
-
+        <br/><br/>
         <section>
-          <a href="/users/<%=user._id%>/edit">Edit Profile</a>
+          <a class="edit-btn edit-a" href="/users/<%=user._id%>/edit">Edit Profile</a>
         </section>
         <br/>
         <form action="/users/<%=user._id%>?_method=DELETE" method="POST">
-          <input type="submit" value="Delete Account"/>
+          <input class='delete-user' type="submit" value="Delete Account"/>
       </div>
   </body>
 

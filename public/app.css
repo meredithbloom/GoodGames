@@ -14,7 +14,7 @@
 /* Forest Green Crayola - #6d9f71 */
 
 
-/* FONTS */
+/*------- FONTS --------*/
 @font-face {
   font-family: 'Games';
   src: url('./fonts/Games-XvD2.ttf') format('ttf');
@@ -40,7 +40,7 @@
     src: url('./fonts/Gepestev-nRJgO.ttf') format('ttf');
 }
 
-/* PLATFORM ICONS */
+/* --------PLATFORM ICONS ---------*/
 
 .Xbox {
   content: url('https://www.freepnglogos.com/uploads/xbox-one-logo-vector-24.png');
@@ -75,7 +75,7 @@
   max-width: 60px;
 }
 
-/* PARTIALS */
+/*---------- PARTIALS----------- */
 body {
   background-color: #294d4a;
   margin: 0 auto;
@@ -129,7 +129,7 @@ a.header {
 }
 
 
-/* HOMEPAGE */
+/* ----------HOMEPAGE----------- */
 
 .homepage {
   width: 50%;
@@ -157,7 +157,7 @@ a.header {
 }
 
 
-/* GAME INDEX PAGE */
+/* -------GAME INDEX PAGE ---------*/
 .all-games {
   /* border: 1px solid #157145; */
   width: 80%;
@@ -189,21 +189,21 @@ a.header {
   color: #445552;
 }
 
-.delete {
+.delete, .delete-user {
   border: none;
   font-family: 'GepesteV';
   background: #A799B7;
   color: #445552;
 }
 
-.delete:hover {
+.delete:hover, .delete-user:hover {
   transform: scale(1.2);
   font-weight: bold;
   cursor: pointer;
   color: #ea1744;
 }
 
-/* GAME SHOW PAGE */
+/*---------- GAME SHOW PAGE ----------*/
 .show-game {
   width: 80%;
   margin: 0 auto;
@@ -233,7 +233,7 @@ a.header {
   max-width: 300px;
 }
 
-.game-year, .game-publisher, .game-dev {
+.game-year, .game-publisher, .game-dev, .personal-details {
   font-family: 'Momcake';
 }
 
@@ -271,6 +271,7 @@ a.header {
   height: 85%;
   justify-content: center;
   align-items: center;
+  font-family: 'Asleepytiming';
 }
 
 .routes {
@@ -280,6 +281,7 @@ a.header {
 
 .edit-btn {
   font-size: 1.5em;
+  font-family: 'Asleepytiming';
 }
 
 .edit-a {
@@ -307,7 +309,7 @@ form {
   justify-content: space-around;
 }
 
-.new-game, .new-user, .profile-box, .profile-details {
+.new-game, .new-user, .profile-box, .profile-detailsm, .edit-game {
   margin: 0 auto;
   background: rgba(167,153,183,.8);
   width: 50%;
@@ -315,11 +317,16 @@ form {
   padding: 1em;
 }
 
+.edit-game-show-box {
+  display: flex;
+
+}
+
 .user-index-img, .prof-pic {
   border-radius: 50%;
 }
 
-.new-game-form, .new-user-form {
+.new-game-form, .new-user-form, .edit-game {
   font-family: 'Momcake';
   font-size: 1.5em;
   display: flex;
@@ -329,7 +336,7 @@ form {
   color: #294d4a;
 }
 
-.submit-new, .index-username {
+.submit-new, .index-username, .edit-game-btn {
   font-family: 'Momcake';
   font-size: 1.5em;
   border: none;
@@ -338,7 +345,7 @@ form {
   color: #294d4a;
 }
 
-.submit-new:hover {
+.submit-new:hover, .edit-game-btn:hover {
   color: #e0e2db;
   font-weight: bold;
   cursor: pointer;
@@ -347,7 +354,13 @@ form {
 /* GAME EDIT PAGE */
 .edit-game {
   margin: 0 auto;
-  width: 60%;
-  border: 1px solid #ea1744;
+  width: 80%;
+  text-align: center;
+  margin-top: 15px;
+  background: rgba(167, 153,183, .5);
+}
+
+.edit-game-form {
+  background: rgba(167,153,183,.8);
   text-align: center;
 }

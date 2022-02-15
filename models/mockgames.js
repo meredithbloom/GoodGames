@@ -1,13 +1,13 @@
 module.exports = [{
-  name: "Browsecat",
-  img: "http://dummyimage.com/220x330.png/cc0000/ffffff",
-  year: 1994,
-  publisher: "Meejo",
-  developer: "Topiczoom",
-  platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  name: "The Last of Us II",
+  img: "https://image.api.playstation.com/vulcan/img/rnd/202010/2618/Y02ljdBodKFBiziorYgqftLE.png",
+  year: 2020,
+  publisher: "Sony Interactive",
+  developer: "Naughty Dog",
+  platforms: ['Playstation'],
+  genres: ['Role-playing', 'Action-Adventure', 'Survival-Horror'],
   creativeLead: "Cherlyn De Metz",
-  gameModes: ['Single-player', 'Multi-player']
+  gameModes: ['Single-player']
 }, {
   name: "Centizu",
   img: "http://dummyimage.com/220x330.png/ff4444/ffffff",

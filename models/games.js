@@ -7,7 +7,12 @@ const gameSchema = mongoose.Schema ({
   year: {type: Number},
   publisher: {type: String},
   developer: String,
-  platforms: {type: [String]},
+  platforms: [
+    {
+      platformName: String,
+      logo: String
+    }
+  ],
   genres: {type: [String]},
   creativeLead: String,
   gameModes: [String]

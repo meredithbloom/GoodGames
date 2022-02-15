@@ -44,37 +44,35 @@
 
 .Xbox {
   content: url('https://www.freepnglogos.com/uploads/xbox-one-logo-vector-24.png');
-  max-width: 75px;
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .Playstation {
-  content: url('https://www.freepnglogos.com/uploads/playstation-png-logo/playstation-png-logo-0.png');
-  max-width: 75px;
-}
-
-.Playstation:hover {
-  color: blue;
+  content: url('https://cdn0.iconfinder.com/data/icons/logos-21/40/PlayStation-256.png');
+  max-width: 60px;
+  max-height: 65px;
 }
 
 .Nintendo {
-
+  content: url('https://www.freepnglogos.com/uploads/nintendo-logo-png/nintendo-logo-vector-20.png');
+  max-width: 75px;
+  max-height: 65px;
 }
 
 .PC {
-
+  content: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-windows-256.png');
+  max-width: 60px;
 }
 
 .Mac {
-
-
-}
-
-.Mobile {
-
+  content: url('https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/Apple-256.png');
+  max-width: 60px;
 }
 
 .VR {
-
+  content: url('https://cdn1.iconfinder.com/data/icons/virtual-reality-82/32/Virtual_Reality_vr_glasses_goggles_headset_user-256.png');
+  max-width: 60px;
 }
 
 /* PARTIALS */
@@ -155,6 +153,7 @@ a.header {
 #games {
   width: 250px;
   height: 250px;
+  background-image: url('views/video-console.png')
 }
 
 
@@ -205,7 +204,7 @@ a.header {
 
 /* GAME SHOW PAGE */
 .show-game {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   background: rgba(167, 153,183, .5);
@@ -218,7 +217,8 @@ a.header {
   font-family: 'Momcake';
   font-size: 3.7em;
   text-align: left;
-  margin-top: .5em;
+  margin-top: .3em;
+  margin-bottom: .5em;
 }
 
 .show-game-sans-title {
@@ -239,8 +239,8 @@ a.header {
 .show-h4 {
   font-size: 2em;
   font-family: 'Momcake';
-  margin-top: .7em;
-  margin-bottom: .7em;
+  margin-top: .5em;
+  margin-bottom: .1em;
 }
 
 .game-details-box {
@@ -248,24 +248,32 @@ a.header {
   width: 10%;
   min-width: 10%;
   padding: 1em;
+  margin-left: 1em;
 }
 
-.game-genre {
+.game-genre, .game-mode {
   font-size: 1.2em;
 }
 
 .platform-box, .game-details-box, .genres-box, .game-modes-box, .routes {
   background: rgba(167, 153,183, .4);
   padding: 10px;
-}
-
-.routes {
-  align-self: flex-end;
+  width: 160px;
 }
 
 .platforms, .genres, .game-modes {
   list-style: none;
   padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  justify-content: center;
+}
+
+.routes {
+  align-self: flex-end;
+  width: 80px;
 }
 
 .edit-btn {

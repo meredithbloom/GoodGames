@@ -36,7 +36,6 @@ const userController = require('./controllers/users-controller.js')
 //   }
 // }
 
-
 //___________________
 //Port
 //___________________
@@ -54,7 +53,6 @@ const SECRET = process.env.SECRET
 //___________________
 //Middleware
 //___________________
-
 app.use(
   session({
     secret: SECRET,

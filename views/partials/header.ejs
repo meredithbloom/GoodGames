@@ -8,6 +8,8 @@
   <% if (currentUser) { %>
     <li class="nav"><a class="header" href="/games">All Games</a></li>
     <li class="nav"><a class="header" href="/games/new">Add a Game</a></li>
+    <li class="nav"><a class="header" href="/users/<%=currentUser._id%>">My Profile</a></li>
+    <li class="nav"><a class="header" href="sessions/logout">Log Out</a></li>
   <% } else { %>
     <li class="nav"><a class="header" href="/users/new">Sign Up</a></li>
     <li class="nav"><a class="header" href="/sessions/new">Log In</a></li>

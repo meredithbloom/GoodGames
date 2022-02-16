@@ -22,13 +22,14 @@ const sessionsController = require('./sessions-controller.js')
 // const grant_type = process.env.client_credentials
 
 
-// const isAuthenticated = (req,res) => {
-//   if(req.session.currentUser) {
-//     return next()
-//   } else {
-//     res.redirect('/sessions/new')
-//   }
-// }
+const isAuthenticated = (req,res,next) => {
+  if(req.session.currentUser) {
+    return next()
+  } else {
+    res.redirect('/sessions/new')
+  }
+}
+
 
 games.use('/users', userController);
 games.use('/sessions', sessionsController)
@@ -38,11 +39,11 @@ games.use(methodOverride('_method'));
 
 
 //NEW GAME ROUTE
-games.get('/new', (req,res) => {
+games.get('/new', isAuthenticated, (req,res) => {
   res.render(
     'games/new.ejs',
     {
-      currentUser: true,
+      currentUser: req.session.currentUser,
       tabTitle: 'Add a Game',
       genres: genres,
       platforms: platforms,
@@ -53,7 +54,7 @@ games.get('/new', (req,res) => {
 
 
 //CREATE GAME ROUTE (create)
-games.post('/', (req,res) => {
+games.post('/', isAuthenticated, (req,res) => {
   Game.create(req.body, (err, addedGame) => {
     res.redirect('/games')
   })
@@ -76,13 +77,13 @@ games.get('/seed', (req,res) => {
 
 
 //GAMES INDEX
-games.get('/', (req,res) =>{
+games.get('/', isAuthenticated, (req,res) =>{
   Game.find({}, (err, allGames) => {
     res.render(
       'games/index.ejs',
       {
         tabTitle: 'All Games',
-        currentUser: true,
+        currentUser: req.session.currentUser,
         games: allGames
       }
     )
@@ -91,12 +92,12 @@ games.get('/', (req,res) =>{
 
 
 //GAME SHOW PAGE
-games.get('/:id', (req,res) => {
+games.get('/:id', isAuthenticated, (req,res) => {
   Game.findById(req.params.id, (err, foundGame) => {
     res.render(
       'games/show.ejs',
       {
-        currentUser: true,
+        currentUser: req.session.currentUser,
         tabTitle: foundGame.name,
         game: foundGame
       }
@@ -106,13 +107,13 @@ games.get('/:id', (req,res) => {
 
 
 //EDIT GAME ROUTE
-games.get('/:id/edit', (req,res) => {
+games.get('/:id/edit', isAuthenticated, (req,res) => {
   Game.findById(req.params.id, (err, foundGame) => {
     res.render(
       'games/edit.ejs',
       {
         tabTitle: 'Edit ' + foundGame.name,
-        currentUser: true,
+        currentUser: req.session.currentUser,
         game: foundGame,
         genres: genres,
         platforms: platforms,
@@ -124,7 +125,7 @@ games.get('/:id/edit', (req,res) => {
 
 
 //UPDATE GAME ROUTE
-games.put('/:id', (req, res) => {
+games.put('/:id', isAuthenticated, (req, res) => {
   Game.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundGame) => {
     res.redirect('/games')
   })
@@ -132,7 +133,7 @@ games.put('/:id', (req, res) => {
 
 
 //GAME DELETE
-games.delete('/:id', (req, res) => {
+games.delete('/:id', isAuthenticated, (req, res) => {
   Game.findByIdAndDelete(req.params.id, (err, deletedGame) => {
     res.redirect('/games')
   })

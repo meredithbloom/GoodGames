@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-
-
+const Game = require('./games.js')
 
 const userSchema = mongoose.Schema({
   name: {type: String, required: true},
@@ -10,10 +9,11 @@ const userSchema = mongoose.Schema({
   img: String,
   genres: [String],
   platforms: [String],
-  gameModes: [String]
-  // currentlyPlaying: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
-  // played: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
-  // willPlay: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}]
+  gameModes: [String],
+  isAdmin: {type: Boolean, default: false},
+  currentlyPlaying: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
+  played: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
+  willPlay: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}]
 });
 
 const User = mongoose.model('Users', userSchema);

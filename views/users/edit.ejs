@@ -7,10 +7,8 @@
     <header>
       <%- include('../partials/header.ejs') %>
     </header>
-
-    <h3 class="prof-page">Welcome back, <%=user.username%>.</h3>
-
-    <container class="profile-details">
+    <div class="profile-details">
+      <h3 class="prof-page">Welcome back, <%=user.username%>.</h3>
       <div class="prof-pic-box">
         <img class="prof-pic" src='<%=user.img%>'></img>
       </div>
@@ -43,7 +41,7 @@
           <% } %>
         </ul>
       </div>
-      
+    </div>
       <div class="edit-profile">
         <form action='/users/<%=user._id%>?_method=PUT' method='POST'>
           name: <input type='text' name='name' value='<%=user.name%>'/> <br/>

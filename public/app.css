@@ -167,11 +167,18 @@ a.header {
   color: #e0e2db;
 }
 
+.homepage-a:hover {
+  transform: scale(1.1)
+}
+
 #games {
   width: 250px;
   height: 250px;
 }
 
+#games:hover {
+  transform: scale(1.1);
+}
 
 
 
@@ -375,7 +382,7 @@ form {
 }
 
 /* GAME EDIT PAGE */
-.edit-game {
+.edit-game, .edit-profile {
   margin: 0 auto;
   width: 80%;
   text-align: center;

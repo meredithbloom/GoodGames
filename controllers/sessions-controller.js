@@ -8,6 +8,7 @@ require('dotenv').config()
 const User = require('../models/users.js')
 const userController = require('./users-controller.js')
 
+
 // sessions.use('/users', userController);
 sessions.use(express.urlencoded({extended:true}));
 sessions.use(methodOverride('_method'));
@@ -50,12 +51,22 @@ sessions.post('/', (req,res) => {
   })
 })
 
-
-sessions.delete('/', (req, res) => {
-  req.session.destroy(() => {
-    res.redirect('/')
+sessions.get('/logout', (req,res) => {
+  req.session.destroy(err => {
+    if(err) {
+      res.send('failed to log out')
+    } else {
+      res.redirect('/')
+    }
   })
 })
+
+
+// sessions.delete('/', (req, res) => {
+//   req.session.destroy(() => {
+//     res.redirect('/')
+//   })
+// })
 
 
 module.exports = sessions

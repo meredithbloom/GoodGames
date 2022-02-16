@@ -15,13 +15,13 @@ const Game = require('../models/games.js')
 const gameController = require('./games-controller.js');
 
 
-// const isAuthenticated = (req,res) => {
-//   if(req.session.currentUser) {
-//     return next()
-//   } else {
-//     res.redirect('/sessions/new')
-//   }
-// }
+const isAuthenticated = (req,res,next) => {
+  if(req.session.currentUser) {
+    return next()
+  } else {
+    res.redirect('/sessions/new')
+  }
+}
 
 
 users.use('/sessions', sessionsController)
@@ -40,7 +40,7 @@ users.get('/new', (req,res)=> {
       genres: genres,
       platforms: platforms,
       gameModes: gameModes,
-      currentUser: false
+      currentUser: req.session.currentUser
     }
   );
 })
@@ -70,7 +70,7 @@ users.post('/', (req,res) => {
 // })
 
 // USER SHOW PAGE
-users.get('/:id', (req,res) => {
+users.get('/:id', isAuthenticated, (req,res) => {
   User.findById(req.params.id, (err, foundUser) => {
     // console.log(foundUser);
     res.render(
@@ -78,14 +78,15 @@ users.get('/:id', (req,res) => {
       {
         currentUser: true,
         tabTitle: `${foundUser.username}'s Profile`,
-        user: foundUser
+        user: foundUser,
+        currentUser: req.session.currentUser
       }
     )
   })
 })
 
 //EDIT PROFILE PAGE
-users.get('/:id/edit', (req,res) => {
+users.get('/:id/edit', isAuthenticated, (req,res) => {
   User.findById(req.params.id, (error, foundUser) => {
     res.render(
       'users/edit.ejs',
@@ -95,7 +96,7 @@ users.get('/:id/edit', (req,res) => {
         genres: genres,
         platforms: platforms,
         gameModes: gameModes,
-        currentUser: true
+        currentUser: req.session.currentUser
       }
     )
   })
@@ -103,9 +104,9 @@ users.get('/:id/edit', (req,res) => {
 
 
 //UPDATE PROFILE
-users.put('/:id', (req,res) => {
+users.put('/:id', isAuthenticated, (req,res) => {
   User.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundUser) => {
-    res.redirect('/users')
+    res.redirect('/users/' + foundUser._id)
   })
 })
 

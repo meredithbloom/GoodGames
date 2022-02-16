@@ -6,24 +6,26 @@
   <body>
     <header>
       <%- include('../partials/header.ejs') %>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     </header>
 
-      <div class="profile-details">
+      <div class="profile-details container">
         <h3 class="prof-page">Welcome back, <%=user.username%>.</h3>
-        <div class="show-profile-sans-title">
-          <div class="prof-pic-box">
+        <div class="show-profile-sans-title container">
+          <div class="prof-pic-box box">
             <img class="prof-pic" src='<%=user.img%>'></img>
           </div>
 
-          <div class="personal-details">
+          <div class="personal-details box">
             <h3 class="username"><%=user.username%></h3>
             <h3 class="prof-name">Name: <%=user.name%></h3>
             <h5 class="email">Email:<br/> <%=user.email%> </h5>
+            <section>
+              <a class="edit-btn edit-a" href="/users/<%=user._id%>/edit">Edit Profile</a>
+            </section>
           </div>
 
 
-          <div class="user-platforms">
+          <div class="user-platforms box">
             <h4 class='show-h4'>Platforms</h4>
             <ul class="platforms">
               <% for (let i = 0; i < user.platforms.length; i++) { %>
@@ -31,7 +33,7 @@
               <% } %>
             </ul>
           </div>
-          <div class="user-genres">
+          <div class="user-genres box">
             <h4 class='show-h4'>Genres</h4>
             <ul class="genres">
               <% for (let i = 0; i < user.genres.length; i++) { %>
@@ -39,7 +41,7 @@
               <% } %>
             </ul>
           </div>
-          <div class="user-game-modes">
+          <div class="user-game-modes box">
             <h4 class='show-h4'>Game Modes</h4>
             <ul class="game-modes">
               <% for (let i = 0; i < user.gameModes.length; i++) { %>
@@ -47,12 +49,6 @@
               <% } %>
             </ul>
           </div>
-          <br/><br/>
-          <div class="profile-edits">
-            <section>
-              <a class="edit-btn edit-a" href="/users/<%=user._id%>/edit">Edit Profile</a>
-            </section>
-            <br/>
             <form action="/users/<%=user._id%>?_method=DELETE" method="POST">
               <input class='delete-user' type="submit" value="Delete Account"/>
             </form>

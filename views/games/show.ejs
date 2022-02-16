@@ -7,17 +7,17 @@
     <header>
       <%- include('../partials/header.ejs') %>
     </header>
-    <div class="show-game">
+    <div class="show-game container">
       <h1 class='show-game-h1'><%=game.name%></h1>
-      <div class="show-game-sans-title">
+      <div class="show-game-sans-title container">
         <img class='show-game-img' src='<%=game.img%>'></img>
-        <div class="game-details-box">
+        <div class="game-details-box box">
           <h3 class='game-year'>Released <%=game.year%></h3>
           <h3 class='game-publisher'>publisher: <br/> <%=game.publisher%></h3>
           <h3 class='game-dev'>developer: <br/> <%=game.developer%></h3>
         </div>
         <br/><br/>
-        <div class='platform-box'>
+        <div class='platform-box box'>
           <h4 class='show-h4'>platforms</h4>
           <ul class="platforms">
             <% for (let i = 0; i < game.platforms.length; i++) { %>
@@ -26,7 +26,7 @@
           </ul>
         </div>
         <br/><br/>
-        <div class="genres-box">
+        <div class="genres-box box">
           <h4 class='show-h4'>genres</h4>
           <ul class="genres">
             <% for (let i = 0; i < game.genres.length; i++) { %>
@@ -35,7 +35,7 @@
           </ul>
         </div>
         <br/><br/>
-        <div class="game-modes-box">
+        <div class="game-modes-box box">
           <h4 class='show-h4'>game Modes</h4>
           <ul class="game-modes">
             <% for (let i = 0; i < game.gameModes.length; i++) { %>
@@ -44,6 +44,7 @@
           </ul>
         </div>
         <br/>
+        <% if (isAdmin == true) { %>
           <div class="routes">
             <section class="edit-btn">
               <a class="edit-a" href="/games/<%=game._id%>/edit">Edit</a>
@@ -53,6 +54,8 @@
               <input type="submit" value="X"/>
             </form>
           </div>
+        <% } %>
+
       </div>
     </div>
   </body>

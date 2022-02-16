@@ -31,6 +31,8 @@ users.use(methodOverride('_method'));
 
 
 
+
+
 //NEW USER PAGE
 users.get('/new', (req,res)=> {
   res.render(
@@ -55,41 +57,11 @@ users.post('/', (req,res) => {
   })
 })
 
-
-// USER INDEX PAGE - PICK YOUR PROFILE //
-// users.get('/', (req,res) => {
-//   User.find({}, (err, allUsers) => {
-//     res.render(
-//       'users/index.ejs',
-//       {
-//         tabTitle: 'Pick your profile',
-//         users: allUsers
-//       }
-//     )
-//   })
-// })
-
-// USER SHOW PAGE
-users.get('/:id', isAuthenticated, (req,res) => {
-  User.findById(req.params.id, (err, foundUser) => {
-    // console.log(foundUser);
-    res.render(
-      'users/show.ejs',
-      {
-        currentUser: true,
-        tabTitle: `${foundUser.username}'s Profile`,
-        user: foundUser,
-        currentUser: req.session.currentUser
-      }
-    )
-  })
-})
-
 // USER MY GAMES PAGE
 users.get('/:id/mygames', isAuthenticated, (req,res) => {
   User.findById(req.params.id, (err, foundUser) => {
     res.render(
-      'users/mygames.ejs',
+      'mygames.ejs',
       {
         tabTitle: 'My Games',
         currentUser: req.session.currentUser,
@@ -100,12 +72,6 @@ users.get('/:id/mygames', isAuthenticated, (req,res) => {
     )
   })
 })
-
-
-
-
-
-
 
 //EDIT PROFILE PAGE
 users.get('/:id/edit', isAuthenticated, (req,res) => {
@@ -124,6 +90,22 @@ users.get('/:id/edit', isAuthenticated, (req,res) => {
   })
 })
 
+// USER SHOW PAGE
+users.get('/:id', isAuthenticated, (req,res) => {
+  User.findById(req.params.id, (err, foundUser) => {
+    // console.log(foundUser);
+    res.render(
+      'users/show.ejs',
+      {
+        currentUser: true,
+        tabTitle: `${foundUser.username}'s Profile`,
+        user: foundUser,
+        currentUser: req.session.currentUser
+      }
+    )
+  })
+})
+
 
 //UPDATE PROFILE
 users.put('/:id', isAuthenticated, (req,res) => {
@@ -136,7 +118,7 @@ users.put('/:id', isAuthenticated, (req,res) => {
 //USER DELETE
 users.delete('/:id', (req,res) => {
   User.findByIdAndDelete(req.params.id, (err, deletedGame) => {
-    res.redirect('/users')
+    res.redirect('/sessions/new')
   })
 })
 

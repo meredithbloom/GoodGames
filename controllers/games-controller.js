@@ -30,6 +30,7 @@ const isAuthenticated = (req,res,next) => {
 }
 
 
+
 games.use('/users', userController);
 games.use('/sessions', sessionsController)
 games.use(express.urlencoded({extended:true}));
@@ -66,29 +67,29 @@ games.get('/seed', (req,res) => {
     res.redirect('/games')
   })
 })
-// Game.create(gameSeed, (err, mockGames) => {
-//   if(err) {
-//     console.log(err)
-//   } else {
-//     console.log('added provided mock game data')
-//   }
-// })
 
 
 //GAMES INDEX - will only be visible to user that is logged in
 games.get('/', isAuthenticated, (req,res) =>{
   Game.find({}, (err, allGames) => {
+    // console.log(allGames)
     res.render(
       'games/index.ejs',
       {
+        platforms: platforms,
         tabTitle: 'All Games',
         currentUser: req.session.currentUser,
+        isAdmin: req.session.currentUser.isAdmin,
         games: allGames
       }
     )
   })
 })
 
+// games.get('/games', isAuthenticated, async (req,res) => {
+//   const filters = req.query;
+//
+// })
 
 
 //GAME SHOW PAGE

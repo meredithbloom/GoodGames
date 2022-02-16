@@ -43,13 +43,13 @@
 /* --------PLATFORM ICONS ---------*/
 
 .Xbox {
-  content: url('https://www.freepnglogos.com/uploads/xbox-one-logo-vector-24.png');
-  max-width: 60px;
-  max-height: 60px;
+  content: url('https://cdn-icons-png.flaticon.com/512/871/871397.png');
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .Playstation {
-  content: url('https://cdn0.iconfinder.com/data/icons/logos-21/40/PlayStation-256.png');
+  content: url('https://cdn-icons-png.flaticon.com/512/588/588299.png');
   max-width: 60px;
   max-height: 65px;
 }
@@ -61,8 +61,9 @@
 }
 
 .PC {
-  content: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-windows-256.png');
+  content: url('https://cdn-icons-png.flaticon.com/512/882/882600.png');
   max-width: 60px;
+  max-height: 65px;
 }
 
 .Mac {
@@ -71,14 +72,26 @@
 }
 
 .VR {
-  content: url('https://cdn1.iconfinder.com/data/icons/virtual-reality-82/32/Virtual_Reality_vr_glasses_goggles_headset_user-256.png');
+  content: url('https://cdn-icons-png.flaticon.com/512/1792/1792579.png');
   max-width: 60px;
+}
+
+.game-platform {
+  margin: 5px 0 5px 0;
 }
 
 /*---------- PARTIALS----------- */
 body {
   background-color: #294d4a;
   margin: 0 auto;
+}
+
+.container {
+  gap: 30px 10px;
+}
+
+.box {
+  height: 350px;
 }
 
 .GG {
@@ -330,6 +343,11 @@ h3.username, h3.prof-name, h5.email {
   justify-content: center;
   align-items: center;
   font-family: 'Asleepytiming';
+  font-size: 1em;
+}
+
+.platforms {
+  flex-wrap: wrap;
 }
 
 .user-platforms, .user-genres, .user-game-modes, .profile-edits {
@@ -356,7 +374,7 @@ h3.username, h3.prof-name, h5.email {
 }
 
 .edit-btn {
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: 'Asleepytiming';
 }
 

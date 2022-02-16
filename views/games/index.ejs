@@ -2,14 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/app.css">
   </head>
   <body>
     <header>
       <%- include('../partials/header.ejs') %>
     </header>
-    <container class="all-games">
+    <div id="filterWrapper">
+      <h4 class="show-h4">Filter by platform</h4>
+      <select id="platforms" name="platforms">
+        <% for (let i=0; i< platforms.length; i++) { %>
+          <option value=<%=platforms[i]%>><%=platforms[i]%></option>
+        <% } %>
+      </select>
+    </div>
+    <container class="all-games container">
       <% for (let i = 0; i<games.length; i++) { %>
-        <div class="games-index">
+        <div class="games-index col-md-4">
           <div class='game-index-img-box'>
             <a href="/games/<%=games[i]._id%>">
               <img class='game-index-img' src='<%=games[i].img%>'></img>
@@ -19,7 +28,7 @@
             <%=games[i].name%>
           </a></h2>
           <br/>
-          <% if (currentUser.isAdmin === true) { %>
+          <% if (isAdmin == true) { %>
             <form class="delete-btn" action="/games/<%=games[i]._id%>?_method=DELETE" method='POST'>
               <input type='submit' value='DELETE' class='delete'/>
             </form>

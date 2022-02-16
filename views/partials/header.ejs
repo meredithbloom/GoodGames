@@ -7,7 +7,7 @@
 <ul class="nav-bar">
   <% if (currentUser) { %>
     <li class="nav"><a class="header" href="/games">All Games</a></li>
-    <li class="nav"><a class="header" href="/games/new">My Games</a></li>
+    <li class="nav"><a class="header" href="/<%=currentUser._id%>/mygames">My Games</a></li>
     <li class="nav"><a class="header" href="/users/<%=currentUser._id%>">My Profile</a></li>
     <li class="nav"><a class="header" href="sessions/logout">Log Out</a></li>
   <% } else { %>

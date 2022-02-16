@@ -6,7 +6,7 @@ const userSchema = mongoose.Schema({
   username: {type: String, unique: true, required:true},
   password: String,
   email: {type: String, required: true},
-  img: String,
+  img: {type: String, default: 'https://i.stack.imgur.com/IHLNO.jpg'},
   genres: [String],
   platforms: [String],
   gameModes: [String],

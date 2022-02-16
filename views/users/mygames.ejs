@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  <body>
+    <header>
+      <%- include('../partials/header.ejs') %>
+    </header>
+    <container class="all-games container">
+      <container class="current-games">
+        <% for (let i = 0; i<currentGames.length; i++) { %>
+        <div class="games-index">
+          <div class='game-index-img-box'>
+            <a href="/games/<%=currentGames[i]._id%>">
+              <img class='game-index-img' src='<%=currentGames[i].img%>'></img>
+            </a>
+          </div>
+          <h2 class='game-index-name'><a href="/games/<%=currentGames[i]._id%>" class="name-a">
+            <%=currentGames[i].name%>
+          </a></h2>
+          <br/>
+        </div>
+    </container>
+  </body>
+</html>

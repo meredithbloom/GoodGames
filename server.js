@@ -27,15 +27,6 @@ const User = require('./models/users.js');
 const userController = require('./controllers/users-controller.js')
 
 
-
-// const isAuthenticated = (req,res) => {
-//   if(req.session.currentUser) {
-//     return next()
-//   } else {
-//     res.redirect('/sessions/new')
-//   }
-// }
-
 //___________________
 //Port
 //___________________
@@ -121,9 +112,6 @@ app.get('/' , (req, res) => {
 // });
 //
 //
-
-
-
 
 
 

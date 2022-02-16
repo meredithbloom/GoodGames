@@ -5,7 +5,6 @@ const methodOverride = require('method-override')
 const bcrypt = require('bcrypt')
 const axios = require('axios')
 
-
 const User = require('../models/users.js');
 const Game = require('../models/games.js');
 
@@ -76,7 +75,7 @@ games.get('/seed', (req,res) => {
 // })
 
 
-//GAMES INDEX
+//GAMES INDEX - will only be visible to user that is logged in
 games.get('/', isAuthenticated, (req,res) =>{
   Game.find({}, (err, allGames) => {
     res.render(
@@ -106,8 +105,8 @@ games.get('/:id', isAuthenticated, (req,res) => {
 })
 
 
-//EDIT GAME ROUTE
-games.get('/:id/edit', isAuthenticated, (req,res) => {
+//EDIT GAME ROUTE - will only be available to user with admin privileges
+games.get('/:id/edit', (req,res) => {
   Game.findById(req.params.id, (err, foundGame) => {
     res.render(
       'games/edit.ejs',
@@ -125,14 +124,14 @@ games.get('/:id/edit', isAuthenticated, (req,res) => {
 
 
 //UPDATE GAME ROUTE
-games.put('/:id', isAuthenticated, (req, res) => {
+games.put('/:id', (req, res) => {
   Game.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, foundGame) => {
     res.redirect('/games')
   })
 })
 
 
-//GAME DELETE
+//GAME DELETE - button will only be visible to users with admin privilege
 games.delete('/:id', isAuthenticated, (req, res) => {
   Game.findByIdAndDelete(req.params.id, (err, deletedGame) => {
     res.redirect('/games')

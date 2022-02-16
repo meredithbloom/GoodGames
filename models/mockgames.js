@@ -9,15 +9,15 @@ module.exports = [{
   creativeLead: "Cherlyn De Metz",
   gameModes: ['Single-player']
 }, {
-  name: "Centizu",
-  img: "http://dummyimage.com/220x330.png/ff4444/ffffff",
-  year: 1985,
-  publisher: "Devbug",
-  developer: "Edgetag",
-  platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  name: "The Legend of Zelda: Breath of the Wild",
+  img: "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+  year: 2017,
+  publisher: "Nintendo",
+  developer: "Nintendo",
+  platforms: ['Nintendo'],
+  genres: ['Action-Adventure'],
   creativeLead: "Clayborn Blight",
-  gameModes: ['Single-player', 'Multi-player']
+  gameModes: ['Single-player']
 }, {
   name: "Cogidoo",
   img: "http://dummyimage.com/220x330.png/5fa2dd/ffffff",

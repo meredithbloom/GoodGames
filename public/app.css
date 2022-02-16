@@ -197,12 +197,21 @@ a.header {
   padding: .5em;
   margin-top: 1em;
   background: #A799B7;
+  max-width: 220px;
 }
 
 .game-index-name {
   font-family: 'Momcake';
   text-align: center;
   font-size: 1.9em;
+}
+
+.game-index-img-box {
+  max-width: 220px;
+  height: 334px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .game-index-img {
@@ -229,7 +238,7 @@ a.header {
 }
 
 /*---------- GAME SHOW PAGE ----------*/
-.show-game {
+.show-game, .profile-details {
   width: 80%;
   margin: 0 auto;
   text-align: center;
@@ -254,8 +263,17 @@ a.header {
   flex-wrap: wrap;
 }
 
+ .show-profile-sans-title {
+   display: flex;
+   justify-content: space-evenly;
+   font-family: "Asleepytiming";
+   flex-wrap: wrap;
+   align-items: center;
+
+ }
+
 .show-game-img {
-  max-width: 300px;
+  max-width: 220px;
 }
 
 .game-year, .game-publisher, .game-dev, .personal-details {
@@ -267,6 +285,7 @@ a.header {
   font-family: 'Momcake';
   margin-top: .5em;
   margin-bottom: .1em;
+  align-self: center;
 }
 
 .game-details-box {
@@ -281,10 +300,24 @@ a.header {
   font-size: 1.1em;
 }
 
-.platform-box, .game-details-box, .genres-box, .game-modes-box, .routes {
+.platform-box, .game-details-box, .genres-box, .game-modes-box, .routes, .personal-details, .user-platforms, .user-genres, .user-game-modes {
   background: rgba(167, 153,183, .4);
   padding: 10px;
   width: 160px;
+}
+
+.personal-details {
+  width: 40%;
+  font-size: 1.4em;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 10px 0 10px;
+}
+
+h3.username, h3.prof-name, h5.email {
+  margin: 10px 0 10px 0;
 }
 
 .platforms, .genres, .game-modes {
@@ -297,6 +330,24 @@ a.header {
   justify-content: center;
   align-items: center;
   font-family: 'Asleepytiming';
+}
+
+.user-platforms, .user-genres, .user-game-modes, .profile-edits {
+  width: 25%;
+  margin: 10px 15px 10px 15px;
+  min-height: 200px;
+  padding: .7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.profile-edits {
+  justify-content: center;
+}
+
+.user-game-modes.ul {
+  height: 85%;
 }
 
 .routes {
@@ -339,7 +390,7 @@ form {
   justify-content: space-around;
 }
 
-.new-game, .new-user, .profile-box, .profile-details, .edit-game, .log-in-box {
+.new-game, .new-user, .profile-box, .edit-game, .log-in-box {
   margin: 0 auto;
   background: rgba(167,153,183,.8);
   width: 50%;
@@ -347,13 +398,33 @@ form {
   padding: 1em;
 }
 
+/* .profile-details {
+  width: 80%;
+  background: rgba(167,153,183,.5);
+  display: flex;
+  flex-flow: row wrap;
+} */
+
+h3.prof-page {
+  width: 100%;
+}
 .edit-game-show-box {
   display: flex;
 }
 
-.user-index-img, .prof-pic {
+.user-index-img {
   border-radius: 50%;
   max-width: 170px;
+}
+
+.prof-pic {
+  border-radius: 50%;
+  width: 225px;
+}
+
+.prof-pic-box {
+  width: 50%;
+  margin-bottom: 2em;
 }
 
 .new-game-form, .new-user-form, .edit-game {

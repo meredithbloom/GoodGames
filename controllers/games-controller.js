@@ -90,13 +90,16 @@ games.get('/', isAuthenticated, (req,res) =>{
 })
 
 
+
 //GAME SHOW PAGE
 games.get('/:id', isAuthenticated, (req,res) => {
   Game.findById(req.params.id, (err, foundGame) => {
+    console.log(req.session.currentUser)
     res.render(
       'games/show.ejs',
       {
         currentUser: req.session.currentUser,
+        isAdmin: req.session.currentUser.isAdmin,
         tabTitle: foundGame.name,
         game: foundGame
       }
@@ -108,6 +111,7 @@ games.get('/:id', isAuthenticated, (req,res) => {
 //EDIT GAME ROUTE - will only be available to user with admin privileges
 games.get('/:id/edit', (req,res) => {
   Game.findById(req.params.id, (err, foundGame) => {
+    console.log(req.session.currentUser)
     res.render(
       'games/edit.ejs',
       {

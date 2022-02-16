@@ -85,6 +85,28 @@ users.get('/:id', isAuthenticated, (req,res) => {
   })
 })
 
+// USER MY GAMES PAGE
+users.get('/:id/mygames', isAuthenticated, (req,res) => {
+  User.findById(req.params.id, (err, foundUser) => {
+    res.render(
+      'users/mygames.ejs',
+      {
+        tabTitle: 'My Games',
+        currentUser: req.session.currentUser,
+        currentGames: req.session.currentUser.currentlyPlaying,
+        pastGames: req.session.currentUser.played,
+        futureGames: req.session.currentUser.willPlay
+      }
+    )
+  })
+})
+
+
+
+
+
+
+
 //EDIT PROFILE PAGE
 users.get('/:id/edit', isAuthenticated, (req,res) => {
   User.findById(req.params.id, (error, foundUser) => {

@@ -9,15 +9,15 @@
     </header>
     <container class="all-games container">
       <container class="current-games">
-        <% for (let i = 0; i<currentGames.length; i++) { %>
+        <% for (let i = 0; i<games.length; i++) { %>
         <div class="games-index">
           <div class='game-index-img-box'>
-            <a href="/games/<%=currentGames[i]._id%>">
-              <img class='game-index-img' src='<%=currentGames[i].img%>'></img>
+            <a href="/games/<%=games[i]._id%>">
+              <img class='game-index-img' src='<%=games[i].img%>'></img>
             </a>
           </div>
-          <h2 class='game-index-name'><a href="/games/<%=currentGames[i]._id%>" class="name-a">
-            <%=currentGames[i].name%>
+          <h2 class='game-index-name'><a href="/games/<%=games[i]._id%>" class="name-a">
+            <%=games[i].name%>
           </a></h2>
           <br/>
         </div>

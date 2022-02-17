@@ -343,7 +343,7 @@ i:hover {
   font-size: 1.1em;
 }
 
-.platform-box, .game-details-box, .genres-box, .game-modes-box, .routes, .personal-details, .user-platforms, .user-genres, .user-game-modes {
+.platform-box, .game-details-box, .genres-box, .game-modes-box, .routes, .personal-details, .user-platforms, .user-genres, .user-game-modes, .user-games {
   background: rgba(167, 153,183, .4);
   padding: 10px;
   width: 160px;
@@ -363,7 +363,7 @@ h3.username, h3.prof-name, h5.email {
   margin: 10px 0 10px 0;
 }
 
-.platforms, .genres, .game-modes {
+.platforms, .genres, .game-modes, .games {
   list-style: none;
   padding: 0;
   margin: 0 auto;

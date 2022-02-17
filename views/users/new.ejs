@@ -35,6 +35,11 @@
           <% } %>
         </select>
         <br/><br/>
+        currently playing: <select id='current-games' name='currentlyPlaying' multiple>
+          <% for (let i=0; i< games.length; i++) { %>
+            <option value='<%=games[i]._id%>'><%=games[i].name%></option>
+          <% } %>
+        </select>
         <input class='submit-new' type='submit' value='create account'/>
       </form>
     </div>

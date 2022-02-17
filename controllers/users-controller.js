@@ -75,35 +75,47 @@ users.get('/:id/mygames', isAuthenticated, (req,res) => {
 //EDIT PROFILE PAGE
 users.get('/:id/edit', isAuthenticated, (req,res) => {
   User.findById(req.params.id, (error, foundUser) => {
-    res.render(
-      'users/edit.ejs',
-      {
-        tabTitle: 'Edit Profile',
-        user: foundUser,
-        genres: genres,
-        platforms: platforms,
-        gameModes: gameModes,
-        currentUser: req.session.currentUser
-      }
-    )
+    Game.find({}, (err, allGames) => {
+      Game.find({ _id: {$in: foundUser.currentlyPlaying}} , (error, foundGames) =>{
+        res.render(
+          'users/edit.ejs',
+          {
+            tabTitle: 'Edit Profile',
+            user: foundUser,
+            genres: genres,
+            platforms: platforms,
+            gameModes: gameModes,
+            currentUser: req.session.currentUser,
+            allGames: allGames,
+            userGames: foundGames
+          }
+        )
+      })
+    })
   })
 })
+
 
 // USER SHOW PAGE
 users.get('/:id', isAuthenticated, (req,res) => {
   User.findById(req.params.id, (err, foundUser) => {
-    // console.log(foundUser);
-    res.render(
-      'users/show.ejs',
-      {
-        currentUser: true,
-        tabTitle: `${foundUser.username}'s Profile`,
-        user: foundUser,
-        currentUser: req.session.currentUser
-      }
-    )
+    Game.find({ _id: {$in: foundUser.currentlyPlaying}} , (error, foundGames) =>{
+      console.log(foundGames)
+      res.render(
+        'users/show.ejs',
+        {
+          currentUser: true,
+          tabTitle: `${foundUser.username}'s Profile`,
+          user: foundUser,
+          currentUser: req.session.currentUser,
+          games: foundGames
+        }
+      )
+    })
   })
 })
+    // console.log(foundUser);
+
 
 
 //UPDATE PROFILE

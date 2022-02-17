@@ -58,6 +58,7 @@
   content: url('https://www.freepnglogos.com/uploads/nintendo-logo-png/nintendo-logo-vector-20.png');
   max-width: 75px;
   max-height: 65px;
+  padding: 10px;
 }
 
 .PC {
@@ -79,6 +80,19 @@
 .game-platform {
   margin: 5px 0 5px 0;
 }
+
+.Single {
+  content: url('https://cdn-icons-png.flaticon.com/512/74/74472.png');
+  max-width: 60px;
+  margin: 10px 0 10px 0;
+}
+
+.Multiplayer {
+  content: url('https://cdn-icons-png.flaticon.com/512/444/444183.png');
+  max-width: 60px;
+  margin: 10px 0 10px 0;
+}
+
 
 /*---------- PARTIALS----------- */
 body {
@@ -309,6 +323,10 @@ a.header {
   margin-left: 1em;
 }
 
+.user-genre {
+  font-size: 1.3em;
+}
+
 .game-genre, .game-mode {
   font-size: 1.1em;
 }
@@ -437,7 +455,7 @@ h3.prof-page {
 
 .prof-pic {
   border-radius: 50%;
-  width: 225px;
+  width: 300px;
 }
 
 .prof-pic-box {
@@ -482,4 +500,12 @@ h3.prof-page {
 .edit-game-form {
   background: rgba(167,153,183,.8);
   text-align: center;
+}
+
+.edit-profile > form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 2em;
+
 }

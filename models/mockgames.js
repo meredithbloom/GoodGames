@@ -25,7 +25,7 @@ module.exports = [{
   publisher: "Photobug",
   developer: "Zoombox",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Tessa Blaik",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -35,7 +35,7 @@ module.exports = [{
   publisher: "Feedspan",
   developer: "Kayveo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Brita Anscott",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -45,7 +45,7 @@ module.exports = [{
   publisher: "Rhynoodle",
   developer: "Thoughtstorm",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Hadleigh Bibbie",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -55,7 +55,7 @@ module.exports = [{
   publisher: "Twinder",
   developer: "Jabberstorm",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Marnia Phettis",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -65,7 +65,7 @@ module.exports = [{
   publisher: "Wikizz",
   developer: "Babbleblab",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Suzette Beresfore",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -75,7 +75,7 @@ module.exports = [{
   publisher: "Brightbean",
   developer: "Ntag",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Norris Headan",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -85,7 +85,7 @@ module.exports = [{
   publisher: "Skilith",
   developer: "Linktype",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Cointon Mowday",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -95,7 +95,7 @@ module.exports = [{
   publisher: "Mynte",
   developer: "Skipstorm",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Suzy Bullman",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -105,7 +105,7 @@ module.exports = [{
   publisher: "Eire",
   developer: "Thoughtbeat",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Lyndell Cammidge",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -115,7 +115,7 @@ module.exports = [{
   publisher: "Browsebug",
   developer: "Roombo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Lorene Jovasevic",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -125,7 +125,7 @@ module.exports = [{
   publisher: "Twitterwire",
   developer: "Skippad",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Devi Skouling",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -135,7 +135,7 @@ module.exports = [{
   publisher: "Skipstorm",
   developer: "Skinder",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Barton Eccersley",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -145,7 +145,7 @@ module.exports = [{
   publisher: "Wikizz",
   developer: "Meemm",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Beau Lagadu",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -155,7 +155,7 @@ module.exports = [{
   publisher: "InnoZ",
   developer: "Twitterwire",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Ronnie Paula",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -165,7 +165,7 @@ module.exports = [{
   publisher: "Riffwire",
   developer: "Innojam",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Jephthah Antrobus",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -175,7 +175,7 @@ module.exports = [{
   publisher: "Kazio",
   developer: "Shuffledrive",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Drusilla Cragell",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -185,7 +185,7 @@ module.exports = [{
   publisher: "Podcat",
   developer: "Twitterbridge",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Riobard Splaven",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -195,7 +195,7 @@ module.exports = [{
   publisher: "Livefish",
   developer: "Vinder",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Haley Caplen",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -205,7 +205,7 @@ module.exports = [{
   publisher: "Jazzy",
   developer: "Rhynyx",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Ulrica Nappin",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -215,7 +215,7 @@ module.exports = [{
   publisher: "Rhynoodle",
   developer: "Meetz",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Thatch Primo",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -225,7 +225,7 @@ module.exports = [{
   publisher: "InnoZ",
   developer: "Dynabox",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Laurens Miskimmon",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -235,7 +235,7 @@ module.exports = [{
   publisher: "Linkbridge",
   developer: "Jaxworks",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Zonda Roblin",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -245,7 +245,7 @@ module.exports = [{
   publisher: "Agimba",
   developer: "Voolia",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Concordia Weatherhogg",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -255,7 +255,7 @@ module.exports = [{
   publisher: "Lazzy",
   developer: "Myworks",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Baxter MacLice",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -265,7 +265,7 @@ module.exports = [{
   publisher: "Riffpath",
   developer: "Gabtune",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Brewer d'Arcy",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -275,7 +275,7 @@ module.exports = [{
   publisher: "Oba",
   developer: "Plajo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Marshall Hampshire",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -285,7 +285,7 @@ module.exports = [{
   publisher: "Pixoboo",
   developer: "Voonder",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Petey Randals",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -295,7 +295,7 @@ module.exports = [{
   publisher: "Dabjam",
   developer: "Livepath",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Tina Moran",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -305,7 +305,7 @@ module.exports = [{
   publisher: "Brainverse",
   developer: "Muxo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Kaylyn Khrishtafovich",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -315,7 +315,7 @@ module.exports = [{
   publisher: "Youbridge",
   developer: "Gabtune",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Bunni Fullegar",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -325,7 +325,7 @@ module.exports = [{
   publisher: "Photobug",
   developer: "Mybuzz",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Margaretta Allridge",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -335,7 +335,7 @@ module.exports = [{
   publisher: "Voonte",
   developer: "Flipopia",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Chrisy Desmond",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -345,7 +345,7 @@ module.exports = [{
   publisher: "Ntag",
   developer: "Voomm",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Dalt Brockie",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -355,7 +355,7 @@ module.exports = [{
   publisher: "Quimm",
   developer: "Quimba",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Allistir Bareham",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -365,7 +365,7 @@ module.exports = [{
   publisher: "Oloo",
   developer: "Livefish",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Nappy Klessmann",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -375,7 +375,7 @@ module.exports = [{
   publisher: "Twitternation",
   developer: "Devpoint",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Gerek McLoughlin",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -385,7 +385,7 @@ module.exports = [{
   publisher: "Photofeed",
   developer: "Babblestorm",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Dorita Haycraft",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -395,7 +395,7 @@ module.exports = [{
   publisher: "Realmix",
   developer: "Topiczoom",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Gertruda Jandourek",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -405,7 +405,7 @@ module.exports = [{
   publisher: "Yakijo",
   developer: "Digitube",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Theressa Creddon",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -415,7 +415,7 @@ module.exports = [{
   publisher: "Mydeo",
   developer: "Zazio",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Mae Adamou",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -425,7 +425,7 @@ module.exports = [{
   publisher: "Quatz",
   developer: "Eimbee",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Emelina Cheek",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -435,7 +435,7 @@ module.exports = [{
   publisher: "Roodel",
   developer: "Devbug",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Jobi Denisard",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -445,7 +445,7 @@ module.exports = [{
   publisher: "Brightbean",
   developer: "Mynte",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Abbott Gillespie",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -455,7 +455,7 @@ module.exports = [{
   publisher: "Edgewire",
   developer: "Yambee",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Emmalynne Kirkup",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -465,7 +465,7 @@ module.exports = [{
   publisher: "Edgewire",
   developer: "Roodel",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Eadmund Gateman",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -475,7 +475,7 @@ module.exports = [{
   publisher: "Wordtune",
   developer: "Meemm",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Johnette Curner",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -485,7 +485,7 @@ module.exports = [{
   publisher: "Realbuzz",
   developer: "Zoombox",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Meghann Schiersch",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -495,7 +495,7 @@ module.exports = [{
   publisher: "Skyvu",
   developer: "Flipbug",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Mandel Arnholdt",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -505,7 +505,7 @@ module.exports = [{
   publisher: "Eabox",
   developer: "Fatz",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Denice Coppledike",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -515,7 +515,7 @@ module.exports = [{
   publisher: "Brainsphere",
   developer: "Oyope",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Joice Demcik",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -525,7 +525,7 @@ module.exports = [{
   publisher: "Fivechat",
   developer: "Roombo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Amalle Lisciardelli",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -535,7 +535,7 @@ module.exports = [{
   publisher: "Jabberbean",
   developer: "Wordpedia",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Hunter Pawlik",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -545,7 +545,7 @@ module.exports = [{
   publisher: "Kaymbo",
   developer: "Wikivu",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Philipa McReynold",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -555,7 +555,7 @@ module.exports = [{
   publisher: "Thoughtblab",
   developer: "Jabbercube",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Zora Siveyer",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -565,7 +565,7 @@ module.exports = [{
   publisher: "Edgetag",
   developer: "Riffwire",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Curr Emmanueli",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -575,7 +575,7 @@ module.exports = [{
   publisher: "Edgetag",
   developer: "Dazzlesphere",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Slade Echalie",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -585,7 +585,7 @@ module.exports = [{
   publisher: "Photofeed",
   developer: "Lazz",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Hewe Twigg",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -595,7 +595,7 @@ module.exports = [{
   publisher: "Tazz",
   developer: "Fivebridge",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Esra Twittey",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -605,7 +605,7 @@ module.exports = [{
   publisher: "Mymm",
   developer: "Pixope",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Farand Bilsborrow",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -615,7 +615,7 @@ module.exports = [{
   publisher: "Eimbee",
   developer: "Skippad",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Ertha Haithwaite",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -625,7 +625,7 @@ module.exports = [{
   publisher: "Feednation",
   developer: "Devpulse",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Gilburt Bagge",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -635,7 +635,7 @@ module.exports = [{
   publisher: "InnoZ",
   developer: "Riffpedia",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Tad Huffadine",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -645,7 +645,7 @@ module.exports = [{
   publisher: "Gabtype",
   developer: "Youspan",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Mimi De Lascy",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -655,7 +655,7 @@ module.exports = [{
   publisher: "Kwimbee",
   developer: "Zoomcast",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Mason Zecchini",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -665,7 +665,7 @@ module.exports = [{
   publisher: "Jatri",
   developer: "Aibox",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Waiter Guerre",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -675,7 +675,7 @@ module.exports = [{
   publisher: "Youspan",
   developer: "Devshare",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Diann Bowell",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -685,7 +685,7 @@ module.exports = [{
   publisher: "Yozio",
   developer: "Dabfeed",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Bevvy Sheaf",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -695,7 +695,7 @@ module.exports = [{
   publisher: "Avamm",
   developer: "Twinder",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Yorgo Dyott",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -705,7 +705,7 @@ module.exports = [{
   publisher: "Abatz",
   developer: "Yombu",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Crista Philbin",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -715,7 +715,7 @@ module.exports = [{
   publisher: "Minyx",
   developer: "Kwideo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Dayna Ruller",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -725,7 +725,7 @@ module.exports = [{
   publisher: "Rhynyx",
   developer: "Katz",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Emmie Clemanceau",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -735,7 +735,7 @@ module.exports = [{
   publisher: "Oodoo",
   developer: "Rhybox",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Marcellina Salliere",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -745,7 +745,7 @@ module.exports = [{
   publisher: "Tavu",
   developer: "Thoughtbeat",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Marlow Bovey",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -755,7 +755,7 @@ module.exports = [{
   publisher: "Edgepulse",
   developer: "Twitterlist",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Susann Rickerd",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -765,7 +765,7 @@ module.exports = [{
   publisher: "Kwideo",
   developer: "Zoomdog",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Horton Evert",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -775,7 +775,7 @@ module.exports = [{
   publisher: "Jabberstorm",
   developer: "Youfeed",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Debra Atkinson",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -785,7 +785,7 @@ module.exports = [{
   publisher: "Demizz",
   developer: "Oyoloo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Gustavo Ivashkov",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -795,7 +795,7 @@ module.exports = [{
   publisher: "Browsecat",
   developer: "Bluezoom",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Alexandr Clancy",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -805,7 +805,7 @@ module.exports = [{
   publisher: "Mycat",
   developer: "Devpulse",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Ardelia Showt",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -815,7 +815,7 @@ module.exports = [{
   publisher: "Oodoo",
   developer: "Devcast",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Benyamin Whitloe",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -825,7 +825,7 @@ module.exports = [{
   publisher: "Vimbo",
   developer: "Tagpad",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Friedrick Duckett",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -835,7 +835,7 @@ module.exports = [{
   publisher: "JumpXS",
   developer: "Aimbo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Samson Dennehy",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -845,7 +845,7 @@ module.exports = [{
   publisher: "Dynazzy",
   developer: "Realcube",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Fabiano McCaffrey",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -855,7 +855,7 @@ module.exports = [{
   publisher: "Thoughtbeat",
   developer: "Fivechat",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Zandra Gutowski",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -865,7 +865,7 @@ module.exports = [{
   publisher: "Rhyzio",
   developer: "Realpoint",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Megan Lyffe",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -875,7 +875,7 @@ module.exports = [{
   publisher: "Ozu",
   developer: "Devcast",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Gilligan Sybe",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -885,7 +885,7 @@ module.exports = [{
   publisher: "Roodel",
   developer: "Topicstorm",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Hughie Cormode",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -895,7 +895,7 @@ module.exports = [{
   publisher: "Centizu",
   developer: "Yoveo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Shae Davion",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -905,7 +905,7 @@ module.exports = [{
   publisher: "Leexo",
   developer: "Skiba",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Phaidra Gilpillan",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -915,7 +915,7 @@ module.exports = [{
   publisher: "Ozu",
   developer: "Jabbersphere",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Auberta de Almeida",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -925,7 +925,7 @@ module.exports = [{
   publisher: "Voonix",
   developer: "Kaymbo",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Danyette Fountain",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -935,7 +935,7 @@ module.exports = [{
   publisher: "Trudeo",
   developer: "Avavee",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Isador Oldrey",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -945,7 +945,7 @@ module.exports = [{
   publisher: "Demimbu",
   developer: "Meezzy",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Chrystal Paddick",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -955,7 +955,7 @@ module.exports = [{
   publisher: "Buzzshare",
   developer: "Aimbu",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Ellene Padson",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -965,7 +965,7 @@ module.exports = [{
   publisher: "Shufflebeat",
   developer: "Yombu",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Cooper Stellino",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -975,7 +975,7 @@ module.exports = [{
   publisher: "Gigashots",
   developer: "Skiptube",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Pebrook Bastide",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -985,7 +985,7 @@ module.exports = [{
   publisher: "Pixonyx",
   developer: "Photojam",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Robinetta Liveley",
   gameModes: ['Single-player', 'Multi-player']
 }, {
@@ -995,7 +995,7 @@ module.exports = [{
   publisher: "Vinder",
   developer: "Tagtune",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Multiplayer online battle arena (MOBA)', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
   creativeLead: "Bernhard Jacquest",
   gameModes: ['Single-player', 'Multi-player']
 }]

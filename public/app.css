@@ -222,7 +222,7 @@ i:hover {
   cursor: pointer;
 }
 
-.all-games {
+.all-games, .my-games {
   /* border: 1px solid #157145; */
   width: 80%;
   display: flex;

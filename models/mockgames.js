@@ -279,7 +279,7 @@ module.exports = [{
   gameModes: ['Single-player']
 }, {
   name: "Resident Evil Village",
-  img: "https://static.wikia.nocookie.net/residentevil/images/1/1b/RE_Village_TGS_2020_wallpaper_%28Phone_1920_x_1080%29.jpg/revision/latest/scale-to-width-down/250?cb=20200927150216",
+  img: "https://image.api.playstation.com/vulcan/ap/rnd/202101/0812/FkzwjnJknkrFlozkTdeQBMub.png",
   year: 2021,
   publisher: "Capcom",
   developer: "Capcom",
@@ -318,11 +318,11 @@ module.exports = [{
   creativeLead: "Kev Levine",
   gameModes: ['Single-player']
 }, {
-  name: "Star Wars Battlefront",
-  img: "https://static.wikia.nocookie.net/starwars/images/f/fe/Battlefront_copy.jpg/revision/latest?cb=20081101163719",
-  year: 2004,
-  publisher: "LucasArts, Electronic Arts",
-  developer: "Motive Studios",
+  name: "Star Wars Battlefront II",
+  img: "https://upload.wikimedia.org/wikipedia/en/thumb/2/23/SWBF2_box.jpeg/220px-SWBF2_box.jpeg",
+  year: 2017,
+  publisher: "Electronic Arts",
+  developer: "DICE",
   platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC'],
   genres: ['Shooters', 'Action-Adventure'],
   creativeLead: "Margaretta Allridge",
@@ -448,15 +448,15 @@ module.exports = [{
   creativeLead: "Abbott Gillespie",
   gameModes: ['Single-player', 'Multi-player']
 }, {
-  name: "Fivebridge",
-  img: "http://dummyimage.com/220x330.png/cc0000/ffffff",
-  year: 1994,
-  publisher: "Edgewire",
-  developer: "Yambee",
-  platforms: ['Xbox', 'Playstation', 'Nintendo', 'PC', 'Mac', 'VR'],
-  genres: ['Sandbox', 'Real-time Strategy', 'Shooters', 'Role-playing', 'Simulation', 'Sports', 'Puzzlers', 'Party Games', 'Action-Adventure', 'Survival-Horror', 'Platformer'],
+  name: "World of Warcraft",
+  img: "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/WoW_Box_Art1.jpg/220px-WoW_Box_Art1.jpg",
+  year: 2004,
+  publisher: "Blizzard",
+  developer: "Blizzard",
+  platforms: ['PC', 'Mac'],
+  genres: ['Role-playing', 'Action-Adventure'],
   creativeLead: "Emmalynne Kirkup",
-  gameModes: ['Single-player', 'Multi-player']
+  gameModes: ['Multi-player']
 }, {
   name: "Photobean",
   img: "http://dummyimage.com/220x330.png/ff4444/ffffff",

@@ -262,12 +262,18 @@ i:hover {
   color: #445552;
 }
 
-.delete, .delete-user {
+.delete, .delete-user, .edit-profile-btn {
   border: none;
   font-family: 'GepesteV';
   background: #A799B7;
   color: #445552;
 }
+
+.edit-profile-btn {
+  width: 100px;
+  align-self: flex-end;
+}
+
 
 .delete:hover, .delete-user:hover {
   transform: scale(1.2);
@@ -412,6 +418,7 @@ h3.username, h3.prof-name, h5.email {
   justify-content: center;
 }
 
+
 .user-game-modes.ul {
   height: 85%;
 }
@@ -512,7 +519,7 @@ h3.prof-page {
   color: #294d4a;
 }
 
-.submit-new:hover, .edit-game-btn:hover {
+.submit-new:hover, .edit-game-btn:hover, .edit-profile-btn:hover {
   color: #e0e2db;
   font-weight: bold;
   cursor: pointer;

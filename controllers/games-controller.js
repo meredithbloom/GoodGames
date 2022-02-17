@@ -56,8 +56,15 @@ games.get('/new', isAuthenticated, (req,res) => {
 
 //CREATE GAME ROUTE (create)
 games.post('/', isAuthenticated, (req,res) => {
-  Game.create(req.body, (err, addedGame) => {
-    res.redirect('/games')
+  Game.findOne({name: req.body.name}, (err, foundGame) => {
+    if (foundGame) {
+      res.send('<a href="/games/new">We already have that game in our database. Add a different game.</a>')
+    } else {
+      Game.create(req.body, (err, addedGame) => {
+        res.redirect('/games')
+        }
+      )
+    }
   })
 })
 

@@ -52,11 +52,18 @@ users.get('/new', (req,res)=> {
 //CREATE USER ROUTE
 users.post('/', (req,res) => {
   // res.send('data received...')
-  req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10));
-  User.create(req.body, (err, newUser) => {
-    res.redirect('/users/' + newUser._id)
+  User.findOne({username: req.body.username}, (err, foundUser) => {
+    if(foundUser) {
+      res.send('<a href="/users/new">That username is taken. Try again.</a>')
+    } else {
+      req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10));
+      User.create(req.body, (err, newUser) => {
+        res.redirect(`/users/${newUser._id}`)
+      })
+    }
   })
 })
+
 
 // USER MY GAMES PAGE
 users.get('/:id/mygames', isAuthenticated, (req,res) => {

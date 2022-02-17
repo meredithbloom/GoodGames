@@ -8,28 +8,21 @@
     <header>
       <%- include('../partials/header.ejs') %>
     </header>
-    <div id="filterWrapper">
-      <h4 class="show-h4">Filter by platform</h4>
-      <select id="platforms" name="platforms">
-        <% for (let i=0; i< platforms.length; i++) { %>
-          <option value=<%=platforms[i]%>><%=platforms[i]%></option>
-        <% } %>
-      </select>
-    </div>
+
     <container class="all-games container">
-      <% for (let i = 0; i<games.length; i++) { %>
-        <div class="games-index col-md-4">
+      <% for (let g = 0; g<games.length; g++) { %>
+        <div class="games-index">
           <div class='game-index-img-box'>
-            <a href="/games/<%=games[i]._id%>">
-              <img class='game-index-img' src='<%=games[i].img%>'></img>
+            <a href="/games/<%=games[g]._id%>">
+              <img class='game-index-img' src='<%=games[g].img%>'></img>
             </a>
           </div>
-          <h2 class='game-index-name'><a href="/games/<%=games[i]._id%>" class="name-a">
-            <%=games[i].name%>
+          <h2 class='game-index-name'><a href="/games/<%=games[g]._id%>" class="name-a">
+            <%=games[g].name%>
           </a></h2>
           <br/>
           <% if (isAdmin == true) { %>
-            <form class="delete-btn" action="/games/<%=games[i]._id%>?_method=DELETE" method='POST'>
+            <form class="delete-btn" action="/games/<%=games[g]._id%>?_method=DELETE" method='POST'>
               <input type='submit' value='DELETE' class='delete'/>
             </form>
           <% } %>

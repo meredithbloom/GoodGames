@@ -210,6 +210,18 @@ a.header {
 
 
 /* -------GAME INDEX PAGE ---------*/
+
+i {
+  position: relative;
+  bottom: 100px;
+  left: 50%;
+  width: 50px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
 .all-games {
   /* border: 1px solid #157145; */
   width: 80%;

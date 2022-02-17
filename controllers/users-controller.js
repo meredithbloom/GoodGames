@@ -30,22 +30,23 @@ users.use(methodOverride('_method'));
 
 
 
-
-
-
 //NEW USER PAGE
 users.get('/new', (req,res)=> {
-  res.render(
-    'users/new.ejs',
-    {
-      tabTitle: 'Create an Account',
-      genres: genres,
-      platforms: platforms,
-      gameModes: gameModes,
-      currentUser: req.session.currentUser
-    }
-  );
+  Game.find({}, (err, allGames) => {
+    res.render(
+      'users/new.ejs',
+      {
+        tabTitle: 'Create an Account',
+        genres: genres,
+        platforms: platforms,
+        gameModes: gameModes,
+        currentUser: req.session.currentUser,
+        games: allGames
+      }
+    );
+  })
 })
+
 
 
 //CREATE USER ROUTE
@@ -61,13 +62,11 @@ users.post('/', (req,res) => {
 users.get('/:id/mygames', isAuthenticated, (req,res) => {
   User.findById(req.params.id, (err, foundUser) => {
     res.render(
-      'mygames.ejs',
+      'users/mygames.ejs',
       {
         tabTitle: 'My Games',
         currentUser: req.session.currentUser,
-        currentGames: req.session.currentUser.currentlyPlaying,
-        pastGames: req.session.currentUser.played,
-        futureGames: req.session.currentUser.willPlay
+        games: req.session.currentUser.currentlyPlaying
       }
     )
   })

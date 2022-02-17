@@ -12,8 +12,6 @@ const userSchema = mongoose.Schema({
   gameModes: [String],
   isAdmin: {type: Boolean, default: false},
   currentlyPlaying: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
-  played: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}],
-  willPlay: [{type: mongoose.Schema.Types.ObjectId, ref: 'Game'}]
 });
 
 const User = mongoose.model('Users', userSchema);

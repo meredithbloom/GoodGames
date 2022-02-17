@@ -20,7 +20,8 @@
         <br/><br/>
         developer:<input type='text' name='developer' placeholder='developer'/>
         <br/><br/>
-        platforms: <select id='platforms' name='platforms' multiple>
+        platforms:
+        <select id='platforms' name='platforms' multiple>
           <% for (let i=0; i< platforms.length; i++) { %>
             <option value=<%=platforms[i]%>><%=platforms[i]%></option>
           <% } %>

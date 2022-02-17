@@ -35,6 +35,7 @@ games.use('/users', userController);
 games.use('/sessions', sessionsController)
 games.use(express.urlencoded({extended:true}));
 games.use(methodOverride('_method'));
+games.use(express.static('../public'))
 
 
 
@@ -95,7 +96,7 @@ games.get('/', isAuthenticated, (req,res) =>{
 //GAME SHOW PAGE
 games.get('/:id', isAuthenticated, (req,res) => {
   Game.findById(req.params.id, (err, foundGame) => {
-    console.log(req.session.currentUser)
+    // console.log(req.session.currentUser)
     res.render(
       'games/show.ejs',
       {
@@ -112,7 +113,7 @@ games.get('/:id', isAuthenticated, (req,res) => {
 //EDIT GAME ROUTE - will only be available to user with admin privileges
 games.get('/:id/edit', (req,res) => {
   Game.findById(req.params.id, (err, foundGame) => {
-    console.log(req.session.currentUser)
+    // console.log(req.session.currentUser)
     res.render(
       'games/edit.ejs',
       {

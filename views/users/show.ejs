@@ -49,8 +49,12 @@
               <% } %>
             </ul>
           </div>
-          <div class="user-games box">
-            <h4 class='show-h4'>Games</h4>
+          <div class="user-games">
+            <h4 class='show-h4 user-game-h4'>
+              <a class="my-games-a" href="/users/<%=user._id%>/mygames">
+                My Games
+              </a>
+            </h4>
             <ul class="games">
               <% for (let i = 0; i < games.length; i++) { %>
                 <li class="user-game-name"><%=games[i].name%></li>

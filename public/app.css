@@ -335,7 +335,7 @@ i:hover {
   margin-left: 1em;
 }
 
-.user-genre {
+.user-genre, .user-game-name {
   font-size: 1.3em;
 }
 
@@ -390,6 +390,24 @@ h3.username, h3.prof-name, h5.email {
   justify-content: flex-start;
 }
 
+.user-games {
+  min-height: 300px;
+  width: 50%;
+}
+
+.user-game-h4 {
+  margin-bottom: 15px;
+}
+
+.games {
+  max-height: 180px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .profile-edits {
   justify-content: center;
 }
@@ -408,7 +426,7 @@ h3.username, h3.prof-name, h5.email {
   font-family: 'Asleepytiming';
 }
 
-.edit-a {
+.edit-a, .my-games-a {
   text-decoration: none;
   color: white;
 }

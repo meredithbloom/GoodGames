@@ -61,16 +61,32 @@ users.post('/', (req,res) => {
 // USER MY GAMES PAGE
 users.get('/:id/mygames', isAuthenticated, (req,res) => {
   User.findById(req.params.id, (err, foundUser) => {
-    res.render(
-      'users/mygames.ejs',
-      {
-        tabTitle: 'My Games',
-        currentUser: req.session.currentUser,
-        games: req.session.currentUser.currentlyPlaying
-      }
-    )
+    Game.find({ _id: {$in: foundUser.currentlyPlaying}} , (error, foundGames) => {
+      res.render(
+        'users/mygames.ejs',
+        {
+          tabTitle: 'My Games',
+          currentUser: foundUser,
+          isAdmin: foundUser.isAdmin,
+          games: foundGames
+        }
+      )
+    })
   })
 })
+
+//REMOVE GAME FROM USER LIST
+// users.delete('/:id/mygames', (req,res) => {
+//   User.findById(req.params.id, (err, foundUser) => {
+//     //finds user list of games
+//     Game.find({ _id: {$in: foundUser.currentlyPlaying}} , (error, foundGames) => {
+//       Game.findByIdAndDelete({_id: {$in: foundGames}}, (err, deletedGame) => {
+//         res.redirect('/:id/mygames')
+//       })
+//     })
+//   })
+// })
+
 
 //EDIT PROFILE PAGE
 users.get('/:id/edit', isAuthenticated, (req,res) => {
@@ -100,7 +116,7 @@ users.get('/:id/edit', isAuthenticated, (req,res) => {
 users.get('/:id', isAuthenticated, (req,res) => {
   User.findById(req.params.id, (err, foundUser) => {
     Game.find({ _id: {$in: foundUser.currentlyPlaying}} , (error, foundGames) =>{
-      console.log(foundGames)
+      // console.log(foundGames)
       res.render(
         'users/show.ejs',
         {

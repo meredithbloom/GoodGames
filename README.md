@@ -33,6 +33,7 @@ Other details:
 6. I was very interested in adding some kind of filter functionality on the main game index, so users could filter by gaming platform/genre/game mode. Search bar would be great too.
 7. Async/await functions... ?!?! I don't even know where to start with these, but I suspect that a lot of the things I wanted to do required this kind of function.
 8. Mobile/tablet/multi-browser responsiveness.
+9. Forgot/recover password functionality. Some kind of automatic email deployment.
 
 **What I Learned**
 - I have a lot of difficulty understanding documentation. I'm a very visual person, so finding diagrams of the MVC, request/response cycle was wayyyy more helpful to me than a lot of the documentation. The fact that everyone uses "var" really confuses me. That being said, mongoose documentation really helped me with schemas/object IDs.

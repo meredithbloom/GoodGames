@@ -1,9 +1,10 @@
 # heroku-meredith-bloom #
 
 ## GoodGames (GGs)
-###an app where users can catalog and track their video games
+### An app where users can catalog and track their video games
 
 **Technical Features**
+
 Users can:
 1. Create an account to view (and add to) the app's catalog of games, as well as build their own game index, where they can keep track of the games that they own/are currently playing.
 2. Users can see more details about each video game, including the gaming platforms, genres, and number of players/game modes supported.

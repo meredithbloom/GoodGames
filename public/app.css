@@ -319,8 +319,16 @@ i:hover {
 
  }
 
+.show-game-img-box {
+  display: flex;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .show-game-img {
-  max-width: 220px;
+  max-width: 250px;
 }
 
 .game-year, .game-publisher, .game-dev, .personal-details {

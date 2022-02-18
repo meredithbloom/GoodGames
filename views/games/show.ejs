@@ -11,7 +11,9 @@
       <h1 class='show-game-h1'><%=game.name%></h1>
       <i class="fi fi-rr-bookmark" id="bookmark"></i>
       <div class="show-game-sans-title container">
-        <img class='show-game-img' src='<%=game.img%>'></img>
+        <div class="show-game-img-box">
+          <img class='show-game-img' src='<%=game.img%>'></img>
+        </div>
         <div class="game-details-box box">
           <h3 class='game-year'>Released <%=game.year%></h3>
           <h3 class='game-publisher'>publisher: <br/> <%=game.publisher%></h3>

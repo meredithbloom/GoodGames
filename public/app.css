@@ -173,7 +173,7 @@ a.header {
 }
 
 .home-h1 {
-  margin-top: 20%;
+  margin-top: 15%;
   font-family: 'Games';
   font-size: 6em;
   color: #e0e2db;
@@ -268,6 +268,8 @@ i:hover {
   background: #A799B7;
   color: #445552;
 }
+
+
 
 .edit-profile-btn {
   width: 100px;
@@ -455,6 +457,7 @@ form {
   font-family: 'Momcake';
   text-align: center;
   margin: 0 auto;
+  color: #294d4a;
 }
 
 .profile-container {
@@ -510,7 +513,7 @@ h3.prof-page {
   color: #294d4a;
 }
 
-.submit-new, .index-username, .edit-game-btn {
+.submit-new, .index-username, .edit-game-btn, .login-btn, .edit-btn {
   font-family: 'Momcake';
   font-size: 1.5em;
   border: none;
@@ -519,7 +522,13 @@ h3.prof-page {
   color: #294d4a;
 }
 
-.submit-new:hover, .edit-game-btn:hover, .edit-profile-btn:hover {
+.edit-btn-section {
+  position: relative;
+  bottom: 400px;
+  left: 250px;
+}
+
+.submit-new:hover, .edit-game-btn:hover, .edit-profile-btn:hover, .login-btn:hover, .edit-btn:hover {
   color: #e0e2db;
   font-weight: bold;
   cursor: pointer;
@@ -531,7 +540,22 @@ h3.prof-page {
   width: 80%;
   text-align: center;
   margin-top: 15px;
-  background: rgba(167, 153,183, .5);
+  background: rgba(167, 153,183, .6);
+  color: #294d4a;
+  margin-bottom: 100px;
+}
+
+
+#platforms {
+  height: 120px;
+}
+
+#genres {
+  height: 210px;
+}
+
+#current-games {
+  height: 210px;
 }
 
 .edit-game-form {

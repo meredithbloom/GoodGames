@@ -1,6 +1,4 @@
-# heroku-meredith-bloom #
-
-## GoodGames (GGs)
+# GoodGames (GGs)
 ### An app where users can catalog and track their video games
 
 **Technical Features**

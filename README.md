@@ -31,9 +31,8 @@ Other details:
 4. I originally wanted users to have three running lists of games: games completed, games they're currently playing, and games they want to play. I wanted to find a way to easily move games between these three arrays of object IDs, ideally using some kind of cute radio button functionality.
 5. I'd really like to add some social components. Not necessarily so users could see each other's profiles (although that could be cool too), but so users could rate/comment on games they'd completed, and then those ratings/comments would be visible on each game's show page for other users to view.
 6. I was very interested in adding some kind of filter functionality on the main game index, so users could filter by gaming platform/genre/game mode. Search bar would be great too.
-7. Async/await functions... ?!?! I don't even know where to start with these, but I suspect that a lot of the things I wanted to do required this kind of function.
-8. Mobile/tablet/multi-browser responsiveness.
-9. Forgot/recover password functionality. Some kind of automatic email deployment.
+7. Mobile/tablet/multi-browser responsiveness.
+8. Forgot/recover password functionality. Some kind of automatic email deployment.
 
 **What I Learned**
 - Learned a lot more about the MVC structure. There were some big conceptual leaps and I feel like I sort of got there, at least enough that I was able to successfully have three controllers.

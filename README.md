@@ -36,8 +36,6 @@ Other details:
 9. Forgot/recover password functionality. Some kind of automatic email deployment.
 
 **What I Learned**
-- I have a lot of difficulty understanding documentation. I'm a very visual person, so finding diagrams of the MVC, request/response cycle was wayyyy more helpful to me than a lot of the documentation. The fact that everyone uses "var" really confuses me. That being said, mongoose documentation really helped me with schemas/object IDs.
-- I can't teach myself everything. In fact, I can't teach myself most things, lol.
 - Learned a lot more about the MVC structure. There were some big conceptual leaps and I feel like I sort of got there, at least enough that I was able to successfully have three controllers.
 - Managing feelings of frustration and, at times, even panic. On Monday I felt totally overwhelmed, since I'd spent all weekend working on something that I ultimately had to scrap completely. Definitely the most frustrated I've felt in a while, certainly during this class.
 - Learning when to step away from my code, reassess my expectations.
